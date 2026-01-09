@@ -18,6 +18,10 @@ ENV GOPRIVATE=github.com/telemetryflow/*
 # Copy source code
 COPY . .
 
+# Cleanup Cache
+RUN go clean -modcache -cache
+RUN rm -f go.sum
+
 # Download dependencies
 RUN go mod download
 

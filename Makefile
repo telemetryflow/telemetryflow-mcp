@@ -98,6 +98,8 @@ deps-vendor: ## Vendor dependencies
 deps-refresh: ## Refresh all dependencies (clean and re-download)
 	@echo "Refreshing dependencies..."
 	@rm -rf vendor go.sum
+	@echo "Clearing module cache..."
+	$(GOCMD) clean -modcache
 	$(GOMOD) download
 	$(GOMOD) tidy
 	$(GOMOD) verify
