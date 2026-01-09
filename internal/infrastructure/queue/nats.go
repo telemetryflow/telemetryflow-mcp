@@ -419,7 +419,7 @@ func (q *NATSQueue) processMessage(ctx context.Context, msg jetstream.Msg) {
 
 	if err != nil {
 		metadata, _ := msg.Metadata()
-		if metadata != nil && int(metadata.NumDelivered) >= q.config.MaxDeliver {
+		if metadata != nil && metadata.NumDelivered >= uint64(q.config.MaxDeliver) { //nolint:gosec // MaxDeliver is always positive
 			fmt.Printf("Task %s failed after max retries: %v\n", task.ID, err)
 			_ = msg.Term()
 		} else {

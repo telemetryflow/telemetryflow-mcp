@@ -63,7 +63,7 @@ func (h *ResourceHandler) ReadResource(ctx context.Context, uri string) (*Resour
 	}
 
 	// Read file
-	file, err := os.Open(path)
+	file, err := os.Open(path) //nolint:gosec // G304: path is validated and cleaned before use
 	if err != nil {
 		return nil, fmt.Errorf("failed to open file: %w", err)
 	}

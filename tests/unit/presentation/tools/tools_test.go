@@ -56,7 +56,7 @@ func TestReadFileTool(t *testing.T) {
 		tmpFile := filepath.Join(tmpDir, "test.txt")
 		content := "Hello, World!"
 
-		if err := os.WriteFile(tmpFile, []byte(content), 0644); err != nil {
+		if err := os.WriteFile(tmpFile, []byte(content), 0600); err != nil {
 			t.Fatalf("failed to create temp file: %v", err)
 		}
 
@@ -107,7 +107,7 @@ func TestWriteFileTool(t *testing.T) {
 		tmpFile := filepath.Join(tmpDir, "new_file.txt")
 		content := "New content"
 
-		if err := os.WriteFile(tmpFile, []byte(content), 0644); err != nil {
+		if err := os.WriteFile(tmpFile, []byte(content), 0600); err != nil {
 			t.Errorf("failed to write file: %v", err)
 		}
 
@@ -127,13 +127,13 @@ func TestWriteFileTool(t *testing.T) {
 		tmpFile := filepath.Join(tmpDir, "existing.txt")
 
 		// Create initial file
-		if err := os.WriteFile(tmpFile, []byte("initial"), 0644); err != nil {
+		if err := os.WriteFile(tmpFile, []byte("initial"), 0600); err != nil {
 			t.Fatalf("failed to create initial file: %v", err)
 		}
 
 		// Overwrite
 		newContent := "overwritten"
-		if err := os.WriteFile(tmpFile, []byte(newContent), 0644); err != nil {
+		if err := os.WriteFile(tmpFile, []byte(newContent), 0600); err != nil {
 			t.Errorf("failed to overwrite file: %v", err)
 		}
 
@@ -152,14 +152,14 @@ func TestListDirectoryTool(t *testing.T) {
 		files := []string{"file1.txt", "file2.txt", "file3.go"}
 		for _, f := range files {
 			path := filepath.Join(tmpDir, f)
-			if err := os.WriteFile(path, []byte("content"), 0644); err != nil {
+			if err := os.WriteFile(path, []byte("content"), 0600); err != nil {
 				t.Fatalf("failed to create file %s: %v", f, err)
 			}
 		}
 
 		// Create a subdirectory
 		subDir := filepath.Join(tmpDir, "subdir")
-		if err := os.Mkdir(subDir, 0755); err != nil {
+		if err := os.Mkdir(subDir, 0750); err != nil {
 			t.Fatalf("failed to create subdir: %v", err)
 		}
 
@@ -191,7 +191,7 @@ func TestSearchFilesTool(t *testing.T) {
 		files := []string{"file1.go", "file2.go", "file3.txt", "file4.md"}
 		for _, f := range files {
 			path := filepath.Join(tmpDir, f)
-			if err := os.WriteFile(path, []byte("content"), 0644); err != nil {
+			if err := os.WriteFile(path, []byte("content"), 0600); err != nil {
 				t.Fatalf("failed to create file %s: %v", f, err)
 			}
 		}

@@ -254,7 +254,7 @@ func (c *Config) buildFileOutput() (io.Writer, error) {
 
 	// Ensure directory exists
 	dir := filepath.Dir(c.File.Path)
-	if err := os.MkdirAll(dir, 0755); err != nil {
+	if err := os.MkdirAll(dir, 0750); err != nil {
 		return nil, fmt.Errorf("failed to create log directory %s: %w", dir, err)
 	}
 

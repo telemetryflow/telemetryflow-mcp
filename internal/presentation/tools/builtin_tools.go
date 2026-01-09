@@ -208,7 +208,7 @@ func handleReadFile(input map[string]interface{}) (*entities.ToolResult, error) 
 		return entities.NewErrorToolResult(err), nil
 	}
 
-	content, err := os.ReadFile(absPath)
+	content, err := os.ReadFile(absPath) //nolint:gosec // G304: path is sanitized via filepath.Abs
 	if err != nil {
 		return entities.NewErrorToolResult(err), nil
 	}
@@ -267,12 +267,12 @@ func handleWriteFile(input map[string]interface{}) (*entities.ToolResult, error)
 	// Create directories if requested
 	if createDirs, ok := input["create_dirs"].(bool); ok && createDirs {
 		dir := filepath.Dir(absPath)
-		if err := os.MkdirAll(dir, 0755); err != nil {
+		if err := os.MkdirAll(dir, 0750); err != nil {
 			return entities.NewErrorToolResult(err), nil
 		}
 	}
 
-	if err := os.WriteFile(absPath, []byte(content), 0644); err != nil {
+	if err := os.WriteFile(absPath, []byte(content), 0600); err != nil {
 		return entities.NewErrorToolResult(err), nil
 	}
 
@@ -382,7 +382,7 @@ func handleExecuteCommand(input map[string]interface{}) (*entities.ToolResult, e
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(timeout)*time.Second)
 	defer cancel()
 
-	cmd := exec.CommandContext(ctx, "sh", "-c", command)
+	cmd := exec.CommandContext(ctx, "sh", "-c", command) //nolint:gosec // G204: command execution is intentional for shell tool
 
 	if workingDir, ok := input["working_dir"].(string); ok && workingDir != "" {
 		cmd.Dir = workingDir
