@@ -2,7 +2,7 @@
 # ==============================================================================
 # TFO-MCP Release Script
 # Version: 1.1.2
-# Description: Create releases for TelemetryFlow MCP Server
+# Description: Create releases for TelemetryFlow GO MCP Server
 # ==============================================================================
 
 set -euo pipefail
@@ -30,9 +30,9 @@ DRY_RUN="${DRY_RUN:-false}"
 
 print_header() {
     echo -e "${PURPLE}"
-    echo "╔══════════════════════════════════════════════════════════════════════╗"
-    echo "║         TelemetryFlow MCP Server - Release Script                    ║"
-    echo "╚══════════════════════════════════════════════════════════════════════╝"
+    echo "╔══════════════════════════════════════════════════════════════╗"
+    echo "║         TelemetryFlow GO MCP Server - Release Script         ║"
+    echo "╚══════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
 }
 

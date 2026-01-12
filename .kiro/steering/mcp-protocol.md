@@ -2,7 +2,7 @@
 
 ## MCP Protocol Implementation
 
-The TelemetryFlow MCP Server strictly follows the Model Context Protocol (MCP) specification version 2024-11-05.
+The TelemetryFlow GO MCP Server strictly follows the Model Context Protocol (MCP) specification version 2024-11-05.
 
 ### Protocol Fundamentals
 

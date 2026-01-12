@@ -12,7 +12,7 @@ inclusion: manual
 
 ## Overview
 
-This specification defines the integration between TelemetryFlow MCP Server and Anthropic's Claude API, enabling AI-powered conversations with tool execution capabilities through the MCP protocol.
+This specification defines the integration between TelemetryFlow GO MCP Server and Anthropic's Claude API, enabling AI-powered conversations with tool execution capabilities through the MCP protocol.
 
 ## Goals
 

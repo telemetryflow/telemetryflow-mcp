@@ -2,7 +2,7 @@
 # ==============================================================================
 # TFO-MCP Validation Script
 # Version: 1.1.2
-# Description: Validate TelemetryFlow MCP Server configuration and environment
+# Description: Validate TelemetryFlow GO MCP Server configuration and environment
 # ==============================================================================
 
 set -euo pipefail
@@ -21,9 +21,9 @@ NC='\033[0m' # No Color
 
 print_header() {
     echo -e "${PURPLE}"
-    echo "╔══════════════════════════════════════════════════════════════════════╗"
-    echo "║       TelemetryFlow MCP Server - Validation Script                   ║"
-    echo "╚══════════════════════════════════════════════════════════════════════╝"
+    echo "╔═══════════════════════════════════════════════════════════════╗"
+    echo "║       TelemetryFlow GO MCP Server - Validation Script         ║"
+    echo "╚═══════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
 }
 

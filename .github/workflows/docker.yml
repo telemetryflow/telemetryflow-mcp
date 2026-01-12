@@ -1,11 +1,11 @@
 # =============================================================================
-# TelemetryFlow MCP Server - Docker Image Builder Workflow
+# TelemetryFlow GO MCP Server - Docker Image Builder Workflow
 # =============================================================================
 #
-# TelemetryFlow MCP Server - Model Context Protocol Server
+# TelemetryFlow GO MCP Server - Model Context Protocol Server
 # Copyright (c) 2024-2026 DevOpsCorner Indonesia. All rights reserved.
 #
-# This workflow builds and publishes Docker images for TelemetryFlow MCP Server:
+# This workflow builds and publishes Docker images for TelemetryFlow GO MCP Server:
 # - Multi-platform support: linux/amd64, linux/arm64
 # - Semantic versioning tags
 # - Docker Hub
@@ -64,7 +64,7 @@ on:
 env:
   REGISTRY_DOCKER: docker.io
   IMAGE_NAME: telemetryflow/telemetryflow-mcp
-  PRODUCT_NAME: TelemetryFlow MCP Server
+  PRODUCT_NAME: TelemetryFlow GO MCP Server
 
 permissions:
   contents: read
@@ -310,7 +310,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Usage" >> $GITHUB_STEP_SUMMARY
           echo '```bash' >> $GITHUB_STEP_SUMMARY
-          echo "# Run TelemetryFlow MCP Server" >> $GITHUB_STEP_SUMMARY
+          echo "# Run TelemetryFlow GO MCP Server" >> $GITHUB_STEP_SUMMARY
           echo "docker run -d \\" >> $GITHUB_STEP_SUMMARY
           echo "  --name tfo-mcp \\" >> $GITHUB_STEP_SUMMARY
           echo "  -v /path/to/tfo-mcp.yaml:/etc/tfo-mcp/tfo-mcp.yaml \\" >> $GITHUB_STEP_SUMMARY

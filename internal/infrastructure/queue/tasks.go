@@ -1,6 +1,6 @@
 // Package queue provides predefined task types for the MCP server.
 //
-// TelemetryFlow MCP Server - Model Context Protocol Server
+// TelemetryFlow GO MCP Server - Model Context Protocol Server
 // Copyright (c) 2024-2026 TelemetryFlow. All rights reserved.
 package queue
 

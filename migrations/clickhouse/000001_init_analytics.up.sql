@@ -1,7 +1,7 @@
 -- ============================================================================
--- TelemetryFlow MCP - ClickHouse Analytics Schema Migration
+-- TelemetryFlow GO MCP - ClickHouse Analytics Schema Migration
 -- Version: 000001
--- Description: Creates analytics tables for TelemetryFlow MCP
+-- Description: Creates analytics tables for TelemetryFlow GO MCP
 -- ============================================================================
 
 -- Create database if not exists

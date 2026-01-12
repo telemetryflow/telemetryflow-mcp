@@ -340,4 +340,4 @@ For security concerns, please contact:
 
 ---
 
-Thank you for helping keep TelemetryFlow MCP and its users secure!
+Thank you for helping keep TelemetryFlow GO MCP and its users secure!

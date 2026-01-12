@@ -1,4 +1,4 @@
-// Package aggregates contains domain aggregates for the TelemetryFlow MCP service
+// Package aggregates contains domain aggregates for the TelemetryFlow GO MCP service
 package aggregates
 
 import (

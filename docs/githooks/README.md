@@ -1,6 +1,6 @@
 # TFO-MCP Git Hooks
 
-> Git hooks documentation for TelemetryFlow MCP Server
+> Git hooks documentation for TelemetryFlow GO MCP Server
 
 ---
 

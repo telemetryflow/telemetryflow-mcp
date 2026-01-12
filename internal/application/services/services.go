@@ -1,4 +1,4 @@
-// Package services provides application-level services for the TelemetryFlow MCP
+// Package services provides application-level services for the TelemetryFlow GO MCP
 package services
 
 import (

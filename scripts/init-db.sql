@@ -1,5 +1,5 @@
 -- ============================================================================
--- TelemetryFlow MCP - PostgreSQL Initialization Script
+-- TelemetryFlow GO MCP - PostgreSQL Initialization Script
 -- This script runs when the PostgreSQL container starts for the first time
 -- ============================================================================
 
@@ -264,4 +264,4 @@ VALUES
     ('00000000-0000-0000-0000-000000000203', 'debug_help', 'Helps debug errors', '[{"name":"error","required":true}]', 'Help debug this error...')
 ON CONFLICT (name) DO NOTHING;
 
-RAISE NOTICE 'TelemetryFlow MCP PostgreSQL initialization complete!';
+RAISE NOTICE 'TelemetryFlow GO MCP PostgreSQL initialization complete!';

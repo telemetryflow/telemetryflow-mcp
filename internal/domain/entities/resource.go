@@ -1,4 +1,4 @@
-// Package entities contains domain entities for the TelemetryFlow MCP service
+// Package entities contains domain entities for the TelemetryFlow GO MCP service
 package entities
 
 import (

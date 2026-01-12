@@ -1,8 +1,8 @@
-# TelemetryFlow MCP Documentation Knowledge Base
+# TelemetryFlow GO MCP Documentation Knowledge Base
 
 ## Overview
 
-This steering file provides comprehensive references to the TelemetryFlow MCP Server documentation located in the `docs/` directory. Use these references to understand the complete system architecture, development processes, and operational procedures.
+This steering file provides comprehensive references to the TelemetryFlow GO MCP Server documentation located in the `docs/` directory. Use these references to understand the complete system architecture, development processes, and operational procedures.
 
 ## Core Documentation References
 
@@ -291,4 +291,4 @@ mcp:
     prompts: true
 ```
 
-This knowledge base ensures that all development work is grounded in the comprehensive documentation available in the `docs/` directory, maintaining consistency and quality across the entire TelemetryFlow MCP Server implementation.
+This knowledge base ensures that all development work is grounded in the comprehensive documentation available in the `docs/` directory, maintaining consistency and quality across the entire TelemetryFlow GO MCP Server implementation.

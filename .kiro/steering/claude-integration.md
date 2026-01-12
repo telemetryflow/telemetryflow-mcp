@@ -2,7 +2,7 @@
 
 ## Claude API Integration
 
-The TelemetryFlow MCP Server integrates with Anthropic's Claude API to provide AI-powered capabilities through the MCP protocol.
+The TelemetryFlow GO MCP Server integrates with Anthropic's Claude API to provide AI-powered capabilities through the MCP protocol.
 
 ### Claude Client Configuration
 

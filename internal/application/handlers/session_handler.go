@@ -1,4 +1,4 @@
-// Package handlers contains CQRS handlers for the TelemetryFlow MCP service
+// Package handlers contains CQRS handlers for the TelemetryFlow GO MCP service
 package handlers
 
 import (

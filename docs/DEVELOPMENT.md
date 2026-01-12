@@ -1,6 +1,6 @@
 # TFO-MCP Development Guide
 
-> Complete development guide for TelemetryFlow MCP Server
+> Complete development guide for TelemetryFlow GO MCP Server
 
 ---
 

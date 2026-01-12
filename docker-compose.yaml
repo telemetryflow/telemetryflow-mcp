@@ -1,14 +1,12 @@
 # ==============================================================================
-# TelemetryFlow MCP Server - Docker Compose
+# TelemetryFlow GO MCP Server - Docker Compose
 # ==============================================================================
 # Development and production deployment configuration
 # ==============================================================================
 
-version: '3.8'
-
 services:
   # ============================================================================
-  # TelemetryFlow MCP Server
+  # TelemetryFlow GO MCP Server
   # ============================================================================
   tfo-mcp:
     build:
@@ -43,8 +41,8 @@ services:
       - TELEMETRYFLOW_SERVICE_VERSION=${TELEMETRYFLOW_MCP_VERSION:-1.1.2}
       - TELEMETRYFLOW_ENVIRONMENT=${TELEMETRYFLOW_ENVIRONMENT:-development}
       # OpenTelemetry (fallback if TELEMETRYFLOW SDK not configured)
-      - OTEL_EXPORTER_OTLP_ENDPOINT=${OTEL_EXPORTER_OTLP_ENDPOINT:-otel-collector:4317}
-      - OTEL_SERVICE_NAME=${OTEL_SERVICE_NAME:-telemetryflow-mcp}
+      - TELEMETRYFLOW_MCP_OTLP_ENDPOINT=${TELEMETRYFLOW_MCP_OTLP_ENDPOINT:-otel-collector:4317}
+      - TELEMETRYFLOW_MCP_SERVICE_NAME=${TELEMETRYFLOW_MCP_SERVICE_NAME:-telemetryflow-mcp}
       # Redis Configuration (for caching)
       - TELEMETRYFLOW_MCP_REDIS_URL=${TELEMETRYFLOW_MCP_REDIS_URL:-redis://redis:6379}
       - TELEMETRYFLOW_MCP_CACHE_ENABLED=${TELEMETRYFLOW_MCP_CACHE_ENABLED:-true}

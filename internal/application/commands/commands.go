@@ -1,4 +1,4 @@
-// Package commands contains CQRS commands for the TelemetryFlow MCP service
+// Package commands contains CQRS commands for the TelemetryFlow GO MCP service
 package commands
 
 import (

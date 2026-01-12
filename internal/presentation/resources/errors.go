@@ -1,4 +1,4 @@
-// Package resources provides MCP resource handling for TelemetryFlow MCP Server
+// Package resources provides MCP resource handling for TelemetryFlow GO MCP Server
 package resources
 
 import "errors"

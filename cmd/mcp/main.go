@@ -1,4 +1,4 @@
-// Package main is the entry point for the TelemetryFlow MCP server
+// Package main is the entry point for the TelemetryFlow GO MCP server
 package main
 
 import (
@@ -33,8 +33,8 @@ var (
 func main() {
 	rootCmd := &cobra.Command{
 		Use:     "tfo-mcp",
-		Short:   "TelemetryFlow MCP Server",
-		Long:    `TelemetryFlow MCP Server - Model Context Protocol server with Claude AI integration`,
+		Short:   "TelemetryFlow GO MCP Server",
+		Long:    `TelemetryFlow GO MCP Server - Model Context Protocol server with Claude AI integration`,
 		Version: fmt.Sprintf("%s (commit: %s, built: %s)", version, commit, buildDate),
 		RunE:    runServer,
 	}
@@ -71,7 +71,7 @@ func runServer(cmd *cobra.Command, args []string) error {
 	logger.Info().
 		Str("version", version).
 		Str("transport", cfg.Server.Transport).
-		Msg("Starting TelemetryFlow MCP Server")
+		Msg("Starting TelemetryFlow GO MCP Server")
 
 	// Create Claude client
 	claudeClient, err := claude.NewClient(&cfg.Claude, logger)
@@ -169,7 +169,7 @@ func versionCmd() *cobra.Command {
 		Use:   "version",
 		Short: "Print version information",
 		Run: func(cmd *cobra.Command, args []string) {
-			fmt.Printf("TelemetryFlow MCP Server\n")
+			fmt.Printf("TelemetryFlow GO MCP Server\n")
 			fmt.Printf("Version:    %s\n", version)
 			fmt.Printf("Commit:     %s\n", commit)
 			fmt.Printf("Build Date: %s\n", buildDate)

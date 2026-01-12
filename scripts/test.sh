@@ -2,7 +2,7 @@
 # ==============================================================================
 # TFO-MCP Test Script
 # Version: 1.1.2
-# Description: Run tests for TelemetryFlow MCP Server
+# Description: Run tests for TelemetryFlow GO MCP Server
 # ==============================================================================
 
 set -euo pipefail
@@ -27,9 +27,9 @@ MIN_COVERAGE="${MIN_COVERAGE:-80}"
 
 print_header() {
     echo -e "${PURPLE}"
-    echo "╔══════════════════════════════════════════════════════════════════════╗"
-    echo "║           TelemetryFlow MCP Server - Test Script                     ║"
-    echo "╚══════════════════════════════════════════════════════════════════════╝"
+    echo "╔═══════════════════════════════════════════════════════════════╗"
+    echo "║           TelemetryFlow GO MCP Server - Test Script           ║"
+    echo "╚═══════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
 }
 

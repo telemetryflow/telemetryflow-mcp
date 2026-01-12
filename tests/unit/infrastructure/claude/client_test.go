@@ -1,6 +1,6 @@
 // Package claude_test provides unit tests for the Claude client.
 //
-// TelemetryFlow MCP Server - Model Context Protocol Server
+// TelemetryFlow GO MCP Server - Model Context Protocol Server
 // Copyright (c) 2024-2026 TelemetryFlow. All rights reserved.
 package claude_test
 

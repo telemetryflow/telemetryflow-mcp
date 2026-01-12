@@ -467,7 +467,7 @@ func SeedDemoSession(ctx context.Context, db *gorm.DB) error {
 		ID:           uuid.MustParse("00000000-0000-0000-0000-000000000402"),
 		SessionID:    session.ID,
 		Model:        "claude-sonnet-4-20250514",
-		SystemPrompt: "You are a helpful AI assistant for the TelemetryFlow MCP demo.",
+		SystemPrompt: "You are a helpful AI assistant for the TelemetryFlow GO MCP demo.",
 		Status:       "active",
 		MaxTokens:    4096,
 		Temperature:  1.0,
@@ -489,7 +489,7 @@ func SeedDemoSession(ctx context.Context, db *gorm.DB) error {
 			Content: models.JSONBArray{
 				map[string]interface{}{
 					"type": "text",
-					"text": "Hello! Can you help me understand how TelemetryFlow MCP works?",
+					"text": "Hello! Can you help me understand how TelemetryFlow GO MCP works?",
 				},
 			},
 		},
@@ -500,7 +500,7 @@ func SeedDemoSession(ctx context.Context, db *gorm.DB) error {
 			Content: models.JSONBArray{
 				map[string]interface{}{
 					"type": "text",
-					"text": "Hello! I'd be happy to help you understand TelemetryFlow MCP.\n\nTelemetryFlow MCP is a Model Context Protocol server that enables AI-powered interactions with Claude. It provides:\n\n1. **Tools**: Functions that Claude can execute (read files, run commands, etc.)\n2. **Resources**: Data sources that Claude can access\n3. **Prompts**: Reusable prompt templates\n4. **Conversations**: Multi-turn conversation management\n\nThe server uses domain-driven design (DDD) with CQRS patterns for clean architecture.\n\nWould you like me to explain any specific feature in more detail?",
+					"text": "Hello! I'd be happy to help you understand TelemetryFlow GO MCP.\n\nTelemetryFlow GO MCP is a Model Context Protocol server that enables AI-powered interactions with Claude. It provides:\n\n1. **Tools**: Functions that Claude can execute (read files, run commands, etc.)\n2. **Resources**: Data sources that Claude can access\n3. **Prompts**: Reusable prompt templates\n4. **Conversations**: Multi-turn conversation management\n\nThe server uses domain-driven design (DDD) with CQRS patterns for clean architecture.\n\nWould you like me to explain any specific feature in more detail?",
 				},
 			},
 		},

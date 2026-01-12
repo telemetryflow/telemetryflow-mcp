@@ -2,7 +2,7 @@
 # ==============================================================================
 # TFO-MCP Docker Build Script
 # Version: 1.1.2
-# Description: Build and manage Docker images for TelemetryFlow MCP Server
+# Description: Build and manage Docker images for TelemetryFlow GO MCP Server
 # ==============================================================================
 
 set -euo pipefail
@@ -30,9 +30,9 @@ PUSH="${PUSH:-false}"
 
 print_header() {
     echo -e "${PURPLE}"
-    echo "╔══════════════════════════════════════════════════════════════════════╗"
-    echo "║       TelemetryFlow MCP Server - Docker Build Script                 ║"
-    echo "╚══════════════════════════════════════════════════════════════════════╝"
+    echo "╔═══════════════════════════════════════════════════════════════╗"
+    echo "║       TelemetryFlow GO MCP Server - Docker Build Script       ║"
+    echo "╚═══════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
 }
 

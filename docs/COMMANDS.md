@@ -1,6 +1,6 @@
 # TFO-MCP Commands Reference
 
-> Complete CLI and MCP protocol commands reference for TelemetryFlow MCP Server
+> Complete CLI and MCP protocol commands reference for TelemetryFlow GO MCP Server
 
 ---
 
@@ -138,7 +138,7 @@ tfo-mcp version
 **Output:**
 
 ```
-TFO-MCP - TelemetryFlow MCP Server
+TFO-MCP - TelemetryFlow GO MCP Server
 Version:    1.1.2
 Go Version: go1.24
 Build Date: 2024-01-15

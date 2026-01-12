@@ -1,6 +1,6 @@
-# TelemetryFlow MCP Troubleshooting Guide
+# TelemetryFlow GO MCP Troubleshooting Guide
 
-> Complete troubleshooting guide for TelemetryFlow MCP Server
+> Complete troubleshooting guide for TelemetryFlow GO MCP Server
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Overview
 
-This guide helps diagnose and resolve common issues with TelemetryFlow MCP.
+This guide helps diagnose and resolve common issues with TelemetryFlow GO MCP.
 
 ### Troubleshooting Approach
 
@@ -68,7 +68,7 @@ flowchart TB
 ```mermaid
 flowchart TB
     subgraph Checklist["Diagnostic Checklist"]
-        C1["✓ Check TelemetryFlow MCP version"]
+        C1["✓ Check TelemetryFlow GO MCP version"]
         C2["✓ Validate configuration"]
         C3["✓ Verify API key"]
         C4["✓ Check network connectivity"]
@@ -162,7 +162,7 @@ flowchart TB
 ```mermaid
 sequenceDiagram
     participant Client
-    participant TFO as TelemetryFlow MCP
+    participant TFO as TelemetryFlow GO MCP
     participant Claude as Claude API
 
     Client->>TFO: JSON-RPC Request
@@ -886,7 +886,7 @@ When creating a GitHub issue, include:
 
 ```markdown
 ## Environment
-- TelemetryFlow MCP Version: `tfo-mcp version`
+- TelemetryFlow GO MCP Version: `tfo-mcp version`
 - OS: macOS 14.0 / Ubuntu 22.04 / Windows 11
 - Go Version: go1.24
 

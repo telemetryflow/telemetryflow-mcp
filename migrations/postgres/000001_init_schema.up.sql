@@ -1,7 +1,7 @@
 -- ============================================================================
--- TelemetryFlow MCP - PostgreSQL Initial Schema Migration
+-- TelemetryFlow GO MCP - PostgreSQL Initial Schema Migration
 -- Version: 000001
--- Description: Creates the initial database schema for TelemetryFlow MCP
+-- Description: Creates the initial database schema for TelemetryFlow GO MCP
 -- ============================================================================
 
 -- Enable required extensions

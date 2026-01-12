@@ -1,4 +1,4 @@
-// Package repositories contains repository interfaces for the TelemetryFlow MCP service
+// Package repositories contains repository interfaces for the TelemetryFlow GO MCP service
 package repositories
 
 import (

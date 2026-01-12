@@ -1,5 +1,5 @@
 # ==============================================================================
-# TelemetryFlow MCP Server Makefile
+# TelemetryFlow GO MCP Server Makefile
 # Version: 1.1.2
 # ==============================================================================
 
@@ -389,7 +389,7 @@ changelog: ## Generate changelog
 
 .PHONY: version
 version: ## Show version information
-	@echo "TelemetryFlow MCP Server"
+	@echo "TelemetryFlow GO MCP Server"
 	@echo "Version:    $(VERSION)"
 	@echo "Commit:     $(COMMIT)"
 	@echo "Build Date: $(BUILD_DATE)"
@@ -423,7 +423,7 @@ docs: ## Generate documentation
 
 .PHONY: help
 help: ## Show this help message
-	@echo "TelemetryFlow MCP Server - Makefile"
+	@echo "TelemetryFlow GO MCP Server - Makefile"
 	@echo ""
 	@echo "Usage: make [target]"
 	@echo ""

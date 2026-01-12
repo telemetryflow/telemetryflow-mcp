@@ -1,7 +1,7 @@
 -- ============================================================================
--- TelemetryFlow MCP - PostgreSQL Initial Schema Migration (Rollback)
+-- TelemetryFlow GO MCP - PostgreSQL Initial Schema Migration (Rollback)
 -- Version: 000001
--- Description: Drops the initial database schema for TelemetryFlow MCP
+-- Description: Drops the initial database schema for TelemetryFlow GO MCP
 -- ============================================================================
 
 -- Drop triggers

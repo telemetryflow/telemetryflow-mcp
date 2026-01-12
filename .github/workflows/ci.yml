@@ -1,11 +1,11 @@
 # =============================================================================
-# TelemetryFlow MCP Server - CI Workflow
+# TelemetryFlow GO MCP Server - CI Workflow
 # =============================================================================
 #
-# TelemetryFlow MCP Server - Model Context Protocol Server
+# TelemetryFlow GO MCP Server - Model Context Protocol Server
 # Copyright (c) 2024-2026 DevOpsCorner Indonesia. All rights reserved.
 #
-# This workflow provides continuous integration for TelemetryFlow MCP Server:
+# This workflow provides continuous integration for TelemetryFlow GO MCP Server:
 # - Code quality checks (lint, vet, fmt)
 # - Unit and integration tests
 # - Build verification (multi-platform)
@@ -59,7 +59,7 @@ on:
 
 env:
   GO_VERSION: '1.24'
-  PRODUCT_NAME: TelemetryFlow MCP Server
+  PRODUCT_NAME: TelemetryFlow GO MCP Server
   BINARY_NAME: tfo-mcp
   GOPRIVATE: github.com/telemetryflow/*
 

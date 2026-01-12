@@ -5,7 +5,7 @@
     <img src="https://github.com/telemetryflow/.github/raw/main/docs/assets/tfo-logo-mcp-light.svg" alt="TelemetryFlow Logo" width="80%">
   </picture>
 
-  <h3>TelemetryFlow MCP Server (TFO-MCP)</h3>
+  <h3>TelemetryFlow GO MCP Server (TFO-MCP)</h3>
 
 [![Version](https://img.shields.io/badge/Version-1.1.2-orange.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -40,6 +40,7 @@ graph LR
         subgraph "Instrumentation"
             SDK_GO[TFO-Go-SDK<br/>OTEL SDK v1.39.0]
             SDK_PY[TFO-Python-SDK<br/>OTEL SDK v1.28.0]
+            SDK_OTHER[TFO-AnyStacks-SDK<br/>OTEL AnyStacks SDK]
         end
         subgraph "Collection"
             AGENT[TFO-Agent<br/>OTEL SDK v1.39.0]
@@ -57,6 +58,7 @@ graph LR
 
     SDK_GO --> AGENT
     SDK_PY --> AGENT
+    SDK_OTHER --> AGENT
     AGENT --> COLLECTOR
     COLLECTOR --> CORE
     MCP --> CORE
@@ -65,6 +67,7 @@ graph LR
     style MCP fill:#E1BEE7,stroke:#7B1FA2,stroke-width:3px
     style SDK_GO fill:#C8E6C9,stroke:#388E3C
     style SDK_PY fill:#C8E6C9,stroke:#388E3C
+    style SDK_OTHER fill:#DFDFDF,stroke:#388E3C
     style AGENT fill:#BBDEFB,stroke:#1976D2
     style COLLECTOR fill:#FFE0B2,stroke:#F57C00
     style CORE fill:#B3E5FC,stroke:#0288D1
@@ -594,7 +597,7 @@ Create `tfo-mcp.yaml` or use `configs/tfo-mcp.yaml`:
 
 ```yaml
 # =============================================================================
-# TelemetryFlow MCP Server Configuration
+# TelemetryFlow GO MCP Server Configuration
 # Version: 1.1.2
 # =============================================================================
 

@@ -1,6 +1,6 @@
 # TFO-MCP Git Workflow
 
-> Git workflow and branching strategy for TelemetryFlow MCP Server
+> Git workflow and branching strategy for TelemetryFlow GO MCP Server
 
 ---
 

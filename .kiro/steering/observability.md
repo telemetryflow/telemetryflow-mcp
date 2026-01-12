@@ -2,14 +2,14 @@
 
 ## OpenTelemetry Integration
 
-The TelemetryFlow MCP Server implements comprehensive observability using OpenTelemetry SDK v1.39.0 with structured logging via Zerolog v1.33.0.
+The TelemetryFlow GO MCP Server implements comprehensive observability using OpenTelemetry SDK v1.39.0 with structured logging via Zerolog v1.33.0.
 
 ### Telemetry Configuration
 
 ```go
 type TelemetryConfig struct {
-    ServiceName    string            `yaml:"service_name" env:"OTEL_SERVICE_NAME"`
-    ServiceVersion string            `yaml:"service_version" env:"OTEL_SERVICE_VERSION"`
+    ServiceName    string            `yaml:"service_name" env:"TELEMETRYFLOW_MCP_SERVICE_NAME"`
+    ServiceVersion string            `yaml:"service_version" env:"TELEMETRYFLOW_MCP_OTEL_SERVICE_VERSION"`
     Environment    string            `yaml:"environment" env:"OTEL_ENVIRONMENT"`
     Tracing        TracingConfig     `yaml:"tracing"`
     Metrics        MetricsConfig     `yaml:"metrics"`

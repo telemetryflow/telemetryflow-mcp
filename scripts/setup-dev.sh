@@ -2,7 +2,7 @@
 # ==============================================================================
 # TFO-MCP Development Setup Script
 # Version: 1.1.2
-# Description: Setup development environment for TelemetryFlow MCP Server
+# Description: Setup development environment for TelemetryFlow GO MCP Server
 # ==============================================================================
 
 set -euo pipefail
@@ -22,9 +22,9 @@ NC='\033[0m' # No Color
 
 print_header() {
     echo -e "${PURPLE}"
-    echo "╔══════════════════════════════════════════════════════════════════════╗"
-    echo "║     TelemetryFlow MCP Server - Development Setup Script              ║"
-    echo "╚══════════════════════════════════════════════════════════════════════╝"
+    echo "╔═════════════════════════════════════════════════════════════════╗"
+    echo "║     TelemetryFlow GO MCP Server - Development Setup Script      ║"
+    echo "╚═════════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
 }
 

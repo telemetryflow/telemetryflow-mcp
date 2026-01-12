@@ -1,6 +1,6 @@
 # TFO-MCP Configuration Guide
 
-> Complete configuration reference for TelemetryFlow MCP Server
+> Complete configuration reference for TelemetryFlow GO MCP Server
 
 ---
 
@@ -230,7 +230,7 @@ flowchart LR
 server:
   name: "tfo-mcp"
   version: "1.1.2"
-  description: "TelemetryFlow MCP Server - Claude AI Integration"
+  description: "TelemetryFlow GO MCP Server - Claude AI Integration"
   timeout: 30s
 
 # Claude API Configuration
@@ -376,7 +376,7 @@ flowchart TB
     subgraph ServerConfig["Server Configuration"]
         NAME["name: tfo-mcp"]
         VERSION["version: 1.1.2"]
-        DESC["description: TelemetryFlow MCP Server"]
+        DESC["description: TelemetryFlow GO MCP Server"]
         TIMEOUT["timeout: 30s"]
     end
 
@@ -401,7 +401,7 @@ flowchart TB
 |--------|------|---------|-------------|
 | `name` | string | "tfo-mcp" | Server identifier |
 | `version` | string | "1.1.2" | Server version |
-| `description` | string | "TelemetryFlow MCP Server" | Human-readable description |
+| `description` | string | "TelemetryFlow GO MCP Server" | Human-readable description |
 | `timeout` | duration | "30s" | Default request timeout |
 
 ### Server Configuration Example
@@ -410,7 +410,7 @@ flowchart TB
 server:
   name: "tfo-mcp"
   version: "1.1.2"
-  description: "TelemetryFlow MCP Server - Claude AI Integration"
+  description: "TelemetryFlow GO MCP Server - Claude AI Integration"
   timeout: 30s
 ```
 
@@ -656,7 +656,7 @@ logging:
 
 ```mermaid
 flowchart TB
-    subgraph TFO_MCP["TelemetryFlow MCP"]
+    subgraph TFO_MCP["TelemetryFlow GO MCP"]
         TRACES["Traces"]
         METRICS["Metrics"]
         LOGS["Logs"]

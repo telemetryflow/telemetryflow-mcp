@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==============================================================================
-# TelemetryFlow MCP Server - Pre-commit Hook
+# TelemetryFlow GO MCP Server - Pre-commit Hook
 # ==============================================================================
 # Runs quality checks before allowing a commit
 # - Go fmt check
@@ -26,7 +26,7 @@ error() { echo -e "${RED}❌ $1${NC}"; }
 
 echo ""
 echo -e "${BLUE}╔══════════════════════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║        TelemetryFlow MCP Server - Pre-commit Checks          ║${NC}"
+echo -e "${BLUE}║       TelemetryFlow GO MCP Server - Pre-commit Checks        ║${NC}"
 echo -e "${BLUE}╚══════════════════════════════════════════════════════════════╝${NC}"
 echo ""
 

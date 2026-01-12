@@ -2,7 +2,7 @@
 
 ## Overview
 
-TelemetryFlow MCP Server is built with Go following Domain-Driven Design patterns and the TelemetryFlow technology standards.
+TelemetryFlow GO MCP Server is built with Go following Domain-Driven Design patterns and the TelemetryFlow technology standards.
 
 ## Core Stack
 

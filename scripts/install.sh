@@ -2,7 +2,7 @@
 # ==============================================================================
 # TFO-MCP Installation Script
 # Version: 1.1.2
-# Description: Install TelemetryFlow MCP Server
+# Description: Install TelemetryFlow GO MCP Server
 # ==============================================================================
 
 set -euo pipefail
@@ -31,8 +31,8 @@ DOWNLOAD_URL="https://github.com/${GITHUB_REPO}/releases/download"
 print_header() {
     echo -e "${PURPLE}"
     echo "╔══════════════════════════════════════════════════════════════════════╗"
-    echo "║       TelemetryFlow MCP Server - Installation Script                 ║"
-    echo "║                       Version ${VERSION}                                   ║"
+    echo "║       TelemetryFlow GO MCP Server - Installation Script              ║"
+    echo "║                       Version v${VERSION}                                ║"
     echo "╚══════════════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
 }

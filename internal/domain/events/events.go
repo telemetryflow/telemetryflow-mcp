@@ -1,4 +1,4 @@
-// Package events contains domain events for the TelemetryFlow MCP service
+// Package events contains domain events for the TelemetryFlow GO MCP service
 package events
 
 import (

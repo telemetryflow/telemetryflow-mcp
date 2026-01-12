@@ -1,5 +1,5 @@
 ---
-title: TelemetryFlow MCP Tool System
+title: TelemetryFlow GO MCP Tool System
 version: 1.0.0
 status: draft
 created: 2025-01-09
@@ -8,11 +8,11 @@ author: TelemetryFlow Team
 inclusion: manual
 ---
 
-# TelemetryFlow MCP Tool System Specification
+# TelemetryFlow GO MCP Tool System Specification
 
 ## Overview
 
-This specification defines the tool system for the TelemetryFlow MCP Server, enabling dynamic tool registration, execution, and management through the MCP protocol with Claude API integration.
+This specification defines the tool system for the TelemetryFlow GO MCP Server, enabling dynamic tool registration, execution, and management through the MCP protocol with Claude API integration.
 
 ## Goals
 

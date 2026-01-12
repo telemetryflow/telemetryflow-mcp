@@ -1,4 +1,4 @@
-// Package queries contains CQRS queries for the TelemetryFlow MCP service
+// Package queries contains CQRS queries for the TelemetryFlow GO MCP service
 package queries
 
 import (

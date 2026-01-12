@@ -1,6 +1,6 @@
-# Contributing to TelemetryFlow MCP
+# Contributing to TelemetryFlow GO MCP
 
-Thank you for your interest in contributing to TelemetryFlow MCP Server! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to TelemetryFlow GO MCP Server! This document provides guidelines and information for contributors.
 
 ## Table of Contents
 
@@ -564,8 +564,8 @@ Contributors will be recognized in:
 
 ## License
 
-By contributing to TelemetryFlow MCP, you agree that your contributions will be licensed under the Apache License 2.0.
+By contributing to TelemetryFlow GO MCP, you agree that your contributions will be licensed under the Apache License 2.0.
 
 ---
 
-Thank you for contributing to TelemetryFlow MCP!
+Thank you for contributing to TelemetryFlow GO MCP!

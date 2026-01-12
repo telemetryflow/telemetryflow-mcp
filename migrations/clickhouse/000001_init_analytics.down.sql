@@ -1,7 +1,7 @@
 -- ============================================================================
--- TelemetryFlow MCP - ClickHouse Analytics Schema Migration (Rollback)
+-- TelemetryFlow GO MCP - ClickHouse Analytics Schema Migration (Rollback)
 -- Version: 000001
--- Description: Drops analytics tables for TelemetryFlow MCP
+-- Description: Drops analytics tables for TelemetryFlow GO MCP
 -- ============================================================================
 
 -- Drop materialized views first

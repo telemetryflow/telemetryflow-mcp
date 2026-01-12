@@ -1,5 +1,5 @@
 // Package valueobjects contains immutable, self-validating value objects
-// following DDD patterns for the TelemetryFlow MCP service.
+// following DDD patterns for the TelemetryFlow GO MCP service.
 package valueobjects
 
 import (

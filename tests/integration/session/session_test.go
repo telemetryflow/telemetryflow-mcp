@@ -1,6 +1,6 @@
 // Package session_test provides integration tests for session management.
 //
-// TelemetryFlow MCP Server - Model Context Protocol Server
+// TelemetryFlow GO MCP Server - Model Context Protocol Server
 // Copyright (c) 2024-2026 TelemetryFlow. All rights reserved.
 package session_test
 

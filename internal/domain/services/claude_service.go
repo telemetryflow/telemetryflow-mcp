@@ -1,4 +1,4 @@
-// Package services contains domain services for the TelemetryFlow MCP service
+// Package services contains domain services for the TelemetryFlow GO MCP service
 package services
 
 import (

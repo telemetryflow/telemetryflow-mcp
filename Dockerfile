@@ -1,5 +1,5 @@
 # ==============================================================================
-# TelemetryFlow MCP Server Dockerfile
+# TelemetryFlow GO MCP Server Dockerfile
 # Multi-stage build for minimal production image
 # ==============================================================================
 
@@ -43,7 +43,7 @@ FROM alpine:3.21
 # =============================================================================
 # TelemetryFlow Metadata Labels (OCI Image Spec)
 # =============================================================================
-LABEL org.opencontainers.image.title="TelemetryFlow MCP Server" \
+LABEL org.opencontainers.image.title="TelemetryFlow GO MCP Server" \
     org.opencontainers.image.description="Enterprise MCP (Model Context Protocol) server for AI-powered observability - Community Enterprise Observability Platform (CEOP)" \
     org.opencontainers.image.version="1.1.2" \
     org.opencontainers.image.vendor="TelemetryFlow" \
@@ -54,7 +54,7 @@ LABEL org.opencontainers.image.title="TelemetryFlow MCP Server" \
     org.opencontainers.image.licenses="Apache-2.0" \
     org.opencontainers.image.base.name="alpine:3.21" \
     # TelemetryFlow specific labels
-    io.telemetryflow.product="TelemetryFlow MCP Server" \
+    io.telemetryflow.product="TelemetryFlow GO MCP Server" \
     io.telemetryflow.component="tfo-mcp" \
     io.telemetryflow.platform="CEOP" \
     io.telemetryflow.maintainer="DevOpsCorner Indonesia"
@@ -121,8 +121,8 @@ ENV TELEMETRYFLOW_MCP_CLICKHOUSE_URL=""
 
 # OpenTelemetry (Fallback)
 ENV TELEMETRYFLOW_MCP_TELEMETRY_ENABLED="true"
-ENV OTEL_EXPORTER_OTLP_ENDPOINT="localhost:4317"
-ENV OTEL_SERVICE_NAME="telemetryflow-mcp"
+ENV TELEMETRYFLOW_MCP_OTLP_ENDPOINT="localhost:4317"
+ENV TELEMETRYFLOW_MCP_SERVICE_NAME="telemetryflow-mcp"
 
 # Health check (for SSE/WebSocket modes)
 # HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \

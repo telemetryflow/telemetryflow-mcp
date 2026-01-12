@@ -2,7 +2,7 @@
 # ==============================================================================
 # TFO-MCP Build Script
 # Version: 1.1.2
-# Description: Build TelemetryFlow MCP Server for various platforms
+# Description: Build TelemetryFlow GO MCP Server for various platforms
 # ==============================================================================
 
 set -euo pipefail
@@ -43,8 +43,8 @@ PLATFORMS=(
 print_header() {
     echo -e "${PURPLE}"
     echo "╔══════════════════════════════════════════════════════════════════════╗"
-    echo "║         TelemetryFlow MCP Server - Build Script                      ║"
-    echo "║                       Version ${VERSION}                                   ║"
+    echo "║         TelemetryFlow GO MCP Server - Build Script                   ║"
+    echo "║                       Version v${VERSION}                                ║"
     echo "╚══════════════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
 }

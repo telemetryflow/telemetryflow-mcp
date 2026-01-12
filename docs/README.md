@@ -1,4 +1,4 @@
-# TelemetryFlow MCP Server Documentation
+# TelemetryFlow GO MCP Server Documentation
 
 - **Version:** 1.1.2
 - **MCP Protocol:** 2024-11-05

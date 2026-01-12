@@ -1,6 +1,6 @@
 # TFO-MCP Installation Guide
 
-> Complete installation guide for TelemetryFlow MCP Server
+> Complete installation guide for TelemetryFlow GO MCP Server
 
 ---
 
@@ -538,7 +538,7 @@ flowchart TB
 tfo-mcp version
 
 # Expected output:
-# TFO-MCP - TelemetryFlow MCP Server
+# TFO-MCP - TelemetryFlow GO MCP Server
 # Version:    1.1.2
 # Go Version: go1.24
 # ...

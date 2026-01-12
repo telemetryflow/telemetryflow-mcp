@@ -1,5 +1,5 @@
 ---
-title: TelemetryFlow MCP Server Core
+title: TelemetryFlow GO MCP Server Core
 version: 1.0.0
 status: draft
 created: 2025-01-09
@@ -8,7 +8,7 @@ author: TelemetryFlow Team
 inclusion: manual
 ---
 
-# TelemetryFlow MCP Server Core Specification
+# TelemetryFlow GO MCP Server Core Specification
 
 ## Overview
 
@@ -35,7 +35,7 @@ graph TB
         DB[(Database)]
     end
 
-    subgraph "TelemetryFlow MCP Server"
+    subgraph "TelemetryFlow GO MCP Server"
         TRANSPORT[Transport Layer]
         PROTOCOL[MCP Protocol Handler]
         APPLICATION[Application Layer]
@@ -637,9 +637,9 @@ DATABASE_MAX_CONNECTIONS: "10"
 DATABASE_TIMEOUT: "5s"
 
 # Observability Configuration
-OTEL_SERVICE_NAME: "telemetryflow-mcp"
-OTEL_SERVICE_VERSION: "1.0.0"
-OTEL_EXPORTER_OTLP_ENDPOINT: "http://localhost:4317"
+TELEMETRYFLOW_MCP_SERVICE_NAME: "telemetryflow-mcp"
+TELEMETRYFLOW_MCP_OTEL_SERVICE_VERSION: "1.0.0"
+TELEMETRYFLOW_MCP_OTLP_ENDPOINT: "http://localhost:4317"
 LOG_LEVEL: "info"
 LOG_FORMAT: "json"
 ```

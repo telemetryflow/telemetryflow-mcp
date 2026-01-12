@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==============================================================================
-# TelemetryFlow MCP Server - Pre-push Hook
+# TelemetryFlow GO MCP Server - Pre-push Hook
 # ==============================================================================
 # Runs comprehensive checks before allowing a push
 # - Full lint check
@@ -41,7 +41,7 @@ while read LOCAL_REF LOCAL_SHA REMOTE_REF REMOTE_SHA; do
 
     echo ""
     echo -e "${BLUE}╔══════════════════════════════════════════════════════════════╗${NC}"
-    echo -e "${BLUE}║         TelemetryFlow MCP Server - Pre-push Checks           ║${NC}"
+    echo -e "${BLUE}║         TelemetryFlow GO MCP Server - Pre-push Checks        ║${NC}"
     echo -e "${BLUE}╚══════════════════════════════════════════════════════════════╝${NC}"
     echo ""
     echo -e "${CYAN}Remote:${NC} $REMOTE ($URL)"

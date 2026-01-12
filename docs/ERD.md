@@ -1,6 +1,6 @@
 # TFO-MCP Entity Relationship Diagrams
 
-> Entity Relationship Diagrams for TelemetryFlow MCP Server
+> Entity Relationship Diagrams for TelemetryFlow GO MCP Server
 
 ---
 

@@ -1,5 +1,5 @@
 -- ============================================================================
--- TelemetryFlow MCP - ClickHouse Initialization Script
+-- TelemetryFlow GO MCP - ClickHouse Initialization Script
 -- This script runs when the ClickHouse container starts for the first time
 -- ============================================================================
 

@@ -1,4 +1,4 @@
-# TelemetryFlow MCP Server Architecture
+# TelemetryFlow GO MCP Server Architecture
 
 - **Version:** 1.1.2
 - **MCP Protocol:** 2024-11-05
@@ -29,7 +29,7 @@
 
 ## Overview
 
-TelemetryFlow MCP Server (TFO-MCP) is an enterprise-grade Model Context Protocol server implementation that provides seamless integration between MCP clients and Anthropic's Claude AI. Built with Go and following Domain-Driven Design (DDD) patterns, it offers a robust, maintainable, and extensible architecture.
+TelemetryFlow GO MCP Server (TFO-MCP) is an enterprise-grade Model Context Protocol server implementation that provides seamless integration between MCP clients and Anthropic's Claude AI. Built with Go and following Domain-Driven Design (DDD) patterns, it offers a robust, maintainable, and extensible architecture.
 
 ### Key Architectural Principles
 
@@ -1042,7 +1042,7 @@ graph TD
 
 ### Database Architecture
 
-TelemetryFlow MCP uses a polyglot persistence strategy with specialized databases for different workloads:
+TelemetryFlow GO MCP uses a polyglot persistence strategy with specialized databases for different workloads:
 
 ```mermaid
 graph TB

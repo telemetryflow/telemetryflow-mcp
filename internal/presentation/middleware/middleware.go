@@ -1,4 +1,4 @@
-// Package middleware provides HTTP/MCP middleware components for TelemetryFlow MCP Server
+// Package middleware provides HTTP/MCP middleware components for TelemetryFlow GO MCP Server
 package middleware
 
 import (

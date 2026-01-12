@@ -1,4 +1,4 @@
-// Package models provides GORM database models for TelemetryFlow MCP
+// Package models provides GORM database models for TelemetryFlow GO MCP
 package models
 
 import (

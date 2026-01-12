@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==============================================================================
-# TelemetryFlow MCP Server - Commit Message Hook
+# TelemetryFlow GO MCP Server - Commit Message Hook
 # ==============================================================================
 # Validates commit messages follow Conventional Commits format
 # https://www.conventionalcommits.org/
@@ -49,7 +49,7 @@ fi
 
 echo ""
 echo -e "${BLUE}╔══════════════════════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║        TelemetryFlow MCP Server - Commit Message Check       ║${NC}"
+echo -e "${BLUE}║      TelemetryFlow GO MCP Server - Commit Message Check      ║${NC}"
 echo -e "${BLUE}╚══════════════════════════════════════════════════════════════╝${NC}"
 echo ""
 
@@ -59,7 +59,7 @@ FIRST_LINE=$(echo "$COMMIT_MSG" | head -n1)
 # Define valid types
 VALID_TYPES="feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert"
 
-# Define valid scopes for TelemetryFlow MCP Server
+# Define valid scopes for TelemetryFlow GO MCP Server
 VALID_SCOPES="mcp|server|session|conversation|tool|resource|prompt|claude|transport|jsonrpc|stdio|sse|config|logging|telemetry|persistence|postgres|clickhouse|domain|application|infrastructure|presentation|pkg|cmd|tests|docker|k8s|helm"
 
 # Regex pattern for conventional commits

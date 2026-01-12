@@ -2,7 +2,7 @@
 
 ## Testing Philosophy
 
-The TelemetryFlow MCP Server follows a comprehensive testing strategy with ≥80% coverage target, emphasizing table-driven tests, mock implementations, and integration testing.
+The TelemetryFlow GO MCP Server follows a comprehensive testing strategy with ≥80% coverage target, emphasizing table-driven tests, mock implementations, and integration testing.
 
 ### Testing Pyramid
 

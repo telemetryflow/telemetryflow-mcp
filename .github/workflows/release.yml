@@ -1,11 +1,11 @@
 # =============================================================================
-# TelemetryFlow MCP Server - Release Workflow
+# TelemetryFlow GO MCP Server - Release Workflow
 # =============================================================================
 #
-# TelemetryFlow MCP Server - Model Context Protocol Server
+# TelemetryFlow GO MCP Server - Model Context Protocol Server
 # Copyright (c) 2024-2026 DevOpsCorner Indonesia. All rights reserved.
 #
-# This workflow builds and releases TelemetryFlow MCP Server for multiple platforms:
+# This workflow builds and releases TelemetryFlow GO MCP Server for multiple platforms:
 # - Linux: RPM (RHEL/CentOS/Fedora), DEB (Debian/Ubuntu)
 # - Windows: EXE (64-bit)
 # - macOS: DMG (Intel and Apple Silicon)
@@ -37,7 +37,7 @@ on:
 env:
   GO_VERSION: '1.24'
   BINARY_NAME: tfo-mcp
-  PRODUCT_NAME: TelemetryFlow MCP Server
+  PRODUCT_NAME: TelemetryFlow GO MCP Server
   VENDOR: DevOpsCorner Indonesia
   MAINTAINER: support@telemetryflow.id
   DESCRIPTION: Model Context Protocol (MCP) server for Claude AI integration with enterprise telemetry capabilities
@@ -419,7 +419,7 @@ jobs:
           getent group telemetryflow >/dev/null || groupadd -r telemetryflow
           getent passwd telemetryflow >/dev/null || \
             useradd -r -g telemetryflow -d /var/lib/tfo-mcp -s /usr/sbin/nologin \
-            -c "TelemetryFlow MCP Server" telemetryflow
+            -c "TelemetryFlow GO MCP Server" telemetryflow
           exit 0
           EOF
           chmod 755 ${PKG_DIR}/DEBIAN/preinst
@@ -430,7 +430,7 @@ jobs:
           chown -R telemetryflow:telemetryflow /var/lib/tfo-mcp
           chown -R telemetryflow:telemetryflow /var/log/tfo-mcp
           systemctl daemon-reload
-          echo "TelemetryFlow MCP Server installed successfully!"
+          echo "TelemetryFlow GO MCP Server installed successfully!"
           echo "To start: sudo systemctl start tfo-mcp"
           echo "To enable on boot: sudo systemctl enable tfo-mcp"
           exit 0
@@ -533,13 +533,13 @@ jobs:
           cp configs/tfo-mcp.yaml ${PKG_DIR}/ || echo "Config not found, skipping"
 
           cat > ${PKG_DIR}/install.ps1 << 'EOF'
-          # TelemetryFlow MCP Server Windows Installer
+          # TelemetryFlow GO MCP Server Windows Installer
           $ErrorActionPreference = "Stop"
 
           $InstallDir = "C:\Program Files\TelemetryFlow\MCP"
           $ConfigDir = "C:\ProgramData\TelemetryFlow\MCP"
 
-          Write-Host "Installing TelemetryFlow MCP Server..." -ForegroundColor Green
+          Write-Host "Installing TelemetryFlow GO MCP Server..." -ForegroundColor Green
 
           New-Item -ItemType Directory -Force -Path $InstallDir | Out-Null
           New-Item -ItemType Directory -Force -Path $ConfigDir | Out-Null
@@ -552,12 +552,12 @@ jobs:
               [Environment]::SetEnvironmentVariable("Path", "$envPath;$InstallDir", "Machine")
           }
 
-          Write-Host "TelemetryFlow MCP Server installed successfully!" -ForegroundColor Green
+          Write-Host "TelemetryFlow GO MCP Server installed successfully!" -ForegroundColor Green
           Write-Host "Binary location: $InstallDir\tfo-mcp.exe" -ForegroundColor Yellow
           EOF
 
           cat > ${PKG_DIR}/README.txt << EOF
-          TelemetryFlow MCP Server v${VERSION}
+          TelemetryFlow GO MCP Server v${VERSION}
           =====================================
 
           Installation:
@@ -638,7 +638,7 @@ jobs:
           INSTALL_DIR="/usr/local/bin"
           CONFIG_DIR="/etc/tfo-mcp"
 
-          echo "Installing TelemetryFlow MCP Server..."
+          echo "Installing TelemetryFlow GO MCP Server..."
 
           sudo mkdir -p "${CONFIG_DIR}"
           sudo cp tfo-mcp "${INSTALL_DIR}/"
@@ -649,7 +649,7 @@ jobs:
           fi
 
           echo ""
-          echo "TelemetryFlow MCP Server installed successfully!"
+          echo "TelemetryFlow GO MCP Server installed successfully!"
           echo ""
           echo "Add to Claude Desktop config:"
           echo '{'
@@ -664,7 +664,7 @@ jobs:
           chmod +x "${DMG_DIR}/install.sh"
 
           cat > "${DMG_DIR}/README.txt" << EOF
-          TelemetryFlow MCP Server v${VERSION}
+          TelemetryFlow GO MCP Server v${VERSION}
           =====================================
           Architecture: ${{ matrix.display_name }} (${{ matrix.macos_arch }})
 
