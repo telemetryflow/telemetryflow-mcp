@@ -67,7 +67,7 @@ graph LR
     style MCP fill:#E1BEE7,stroke:#7B1FA2,stroke-width:3px
     style SDK_GO fill:#C8E6C9,stroke:#388E3C
     style SDK_PY fill:#C8E6C9,stroke:#388E3C
-    style SDK_OTHER fill:#DFDFDF,stroke:#388E3C
+    style SDK_OTHER fill:#DFDFDF,stroke:#EFEFEF
     style AGENT fill:#BBDEFB,stroke:#1976D2
     style COLLECTOR fill:#FFE0B2,stroke:#F57C00
     style CORE fill:#B3E5FC,stroke:#0288D1
