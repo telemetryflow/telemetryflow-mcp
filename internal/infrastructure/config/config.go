@@ -270,8 +270,8 @@ func bindEnvVars(v *viper.Viper) {
 
 	// Telemetry
 	_ = v.BindEnv("telemetry.enabled", "TELEMETRYFLOW_MCP_TELEMETRY_ENABLED")
-	_ = v.BindEnv("telemetry.otlp_endpoint", "TELEMETRYFLOW_MCP_OTLP_ENDPOINT")
-	_ = v.BindEnv("telemetry.service_name", "TELEMETRYFLOW_MCP_SERVICE_NAME")
+	_ = v.BindEnv("telemetry.otlp_endpoint", "TELEMETRYFLOW_ENDPOINT", "TELEMETRYFLOW_MCP_OTLP_ENDPOINT")
+	_ = v.BindEnv("telemetry.service_name", "TELEMETRYFLOW_SERVICE_NAME", "TELEMETRYFLOW_MCP_SERVICE_NAME")
 }
 
 // Validate validates the configuration
