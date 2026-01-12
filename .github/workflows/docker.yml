@@ -63,7 +63,7 @@ on:
 
 env:
   REGISTRY_DOCKER: docker.io
-  IMAGE_NAME: telemetryflow/telemetryflow-mcp
+  IMAGE_NAME: telemetryflow/telemetryflow-go-mcp
   PRODUCT_NAME: TelemetryFlow GO MCP Server
 
 permissions:
