@@ -90,10 +90,10 @@ func DefaultConfig() *Config {
 		Output:         "stdout",
 		TimeFormat:     time.RFC3339,
 		IncludeCaller:  false,
-		ServiceName:    "telemetryflow-mcp",
+		ServiceName:    "telemetryflow-go-mcp",
 		ServiceVersion: "0.1.0",
 		File: &FileConfig{
-			Path:       "/var/log/telemetryflow-mcp/server.log",
+			Path:       "/var/log/telemetryflow-go-mcp/server.log",
 			MaxSize:    100, // megabytes
 			MaxBackups: 3,
 			MaxAge:     28, // days
@@ -104,7 +104,7 @@ func DefaultConfig() *Config {
 			Level:         "info",
 			BufferSize:    100,
 			FlushInterval: 5 * time.Second,
-			LoggerName:    "telemetryflow-mcp",
+			LoggerName:    "telemetryflow-go-mcp",
 		},
 		Request: &RequestConfig{
 			LogRequestBody:       true,

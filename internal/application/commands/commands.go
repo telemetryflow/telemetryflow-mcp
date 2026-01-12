@@ -2,8 +2,8 @@
 package commands
 
 import (
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/entities"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/entities"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // Command is the base interface for all commands

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# TFO-MCP Build Script
+# TFO-GO-MCP Build Script
 # Version: 1.1.2
 # Description: Build TelemetryFlow GO MCP Server for various platforms
 # ==============================================================================
@@ -153,11 +153,11 @@ build_docker() {
         --build-arg VERSION="${VERSION}" \
         --build-arg COMMIT="${COMMIT}" \
         --build-arg BUILD_DATE="${BUILD_DATE}" \
-        -t "telemetryflow-mcp:${VERSION}" \
-        -t "telemetryflow-mcp:latest" \
+        -t "telemetryflow-go-mcp:${VERSION}" \
+        -t "telemetryflow-go-mcp:latest" \
         .
 
-    log_success "Docker image built: telemetryflow-mcp:${VERSION}"
+    log_success "Docker image built: telemetryflow-go-mcp:${VERSION}"
 }
 
 create_checksums() {
@@ -208,7 +208,7 @@ clean() {
 }
 
 show_help() {
-    echo "TFO-MCP Build Script"
+    echo "TFO-GO-MCP Build Script"
     echo ""
     echo "Usage: $0 [command] [options]"
     echo ""

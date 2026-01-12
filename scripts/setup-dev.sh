@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# TFO-MCP Development Setup Script
+# TFO-GO-MCP Development Setup Script
 # Version: 1.1.2
 # Description: Setup development environment for TelemetryFlow GO MCP Server
 # ==============================================================================
@@ -121,7 +121,7 @@ setup_git_hooks() {
     # Pre-commit hook
     cat > "${HOOKS_DIR}/pre-commit" << 'EOF'
 #!/usr/bin/env bash
-# TFO-MCP Pre-commit Hook
+# TFO-GO-MCP Pre-commit Hook
 
 set -e
 
@@ -153,7 +153,7 @@ EOF
     # Pre-push hook
     cat > "${HOOKS_DIR}/pre-push" << 'EOF'
 #!/usr/bin/env bash
-# TFO-MCP Pre-push Hook
+# TFO-GO-MCP Pre-push Hook
 
 set -e
 
@@ -177,7 +177,7 @@ EOF
     # Commit-msg hook
     cat > "${HOOKS_DIR}/commit-msg" << 'EOF'
 #!/usr/bin/env bash
-# TFO-MCP Commit Message Hook
+# TFO-GO-MCP Commit Message Hook
 
 COMMIT_MSG_FILE=$1
 COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
@@ -285,7 +285,7 @@ EOF
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug TFO-MCP",
+      "name": "Debug TFO-GO-MCP",
       "type": "go",
       "request": "launch",
       "mode": "debug",
@@ -376,12 +376,12 @@ print_next_steps() {
     echo "     air"
     echo ""
     echo "  5. Start debugging in VS Code:"
-    echo "     Press F5 or use 'Debug TFO-MCP' configuration"
+    echo "     Press F5 or use 'Debug TFO-GO-MCP' configuration"
     echo ""
 }
 
 show_help() {
-    echo "TFO-MCP Development Setup Script"
+    echo "TFO-GO-MCP Development Setup Script"
     echo ""
     echo "Usage: $0 [command]"
     echo ""

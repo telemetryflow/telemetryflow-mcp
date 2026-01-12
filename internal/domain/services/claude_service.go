@@ -4,9 +4,9 @@ package services
 import (
 	"context"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/aggregates"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/entities"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/aggregates"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/entities"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // ClaudeRequest represents a request to the Claude API

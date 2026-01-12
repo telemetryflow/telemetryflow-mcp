@@ -1,4 +1,4 @@
-# TFO-MCP Installation Guide
+# TFO-GO-MCP Installation Guide
 
 > Complete installation guide for TelemetryFlow GO MCP Server
 
@@ -21,7 +21,7 @@
 
 ## Overview
 
-TFO-MCP can be installed through multiple methods depending on your needs and environment.
+TFO-GO-MCP can be installed through multiple methods depending on your needs and environment.
 
 ### Installation Decision Tree
 
@@ -153,10 +153,10 @@ flowchart TB
 
 ```bash
 # Download latest release (Apple Silicon)
-curl -LO https://github.com/telemetryflow/telemetryflow-mcp/releases/latest/download/tfo-mcp_darwin_arm64.tar.gz
+curl -LO https://github.com/telemetryflow/telemetryflow-go-mcp/releases/latest/download/tfo-mcp_darwin_arm64.tar.gz
 
 # Or Intel Mac
-curl -LO https://github.com/telemetryflow/telemetryflow-mcp/releases/latest/download/tfo-mcp_darwin_amd64.tar.gz
+curl -LO https://github.com/telemetryflow/telemetryflow-go-mcp/releases/latest/download/tfo-mcp_darwin_amd64.tar.gz
 
 # Extract
 tar -xzf tfo-mcp_darwin_*.tar.gz
@@ -172,10 +172,10 @@ tfo-mcp version
 
 ```bash
 # Download latest release (amd64)
-curl -LO https://github.com/telemetryflow/telemetryflow-mcp/releases/latest/download/tfo-mcp_linux_amd64.tar.gz
+curl -LO https://github.com/telemetryflow/telemetryflow-go-mcp/releases/latest/download/tfo-mcp_linux_amd64.tar.gz
 
 # Or ARM64
-curl -LO https://github.com/telemetryflow/telemetryflow-mcp/releases/latest/download/tfo-mcp_linux_arm64.tar.gz
+curl -LO https://github.com/telemetryflow/telemetryflow-go-mcp/releases/latest/download/tfo-mcp_linux_arm64.tar.gz
 
 # Extract
 tar -xzf tfo-mcp_linux_*.tar.gz
@@ -194,16 +194,16 @@ tfo-mcp version
 
 ```powershell
 # Download latest release
-Invoke-WebRequest -Uri "https://github.com/telemetryflow/telemetryflow-mcp/releases/latest/download/tfo-mcp_windows_amd64.zip" -OutFile "tfo-mcp.zip"
+Invoke-WebRequest -Uri "https://github.com/telemetryflow/telemetryflow-go-mcp/releases/latest/download/tfo-mcp_windows_amd64.zip" -OutFile "tfo-mcp.zip"
 
 # Extract
 Expand-Archive -Path "tfo-mcp.zip" -DestinationPath "."
 
 # Move to Program Files
-Move-Item -Path "tfo-mcp.exe" -Destination "C:\Program Files\TFO-MCP\"
+Move-Item -Path "tfo-mcp.exe" -Destination "C:\Program Files\TFO-GO-MCP\"
 
 # Add to PATH (run as Administrator)
-$env:Path += ";C:\Program Files\TFO-MCP"
+$env:Path += ";C:\Program Files\TFO-GO-MCP"
 [Environment]::SetEnvironmentVariable("Path", $env:Path, [EnvironmentVariableTarget]::Machine)
 
 # Verify installation
@@ -214,7 +214,7 @@ tfo-mcp version
 
 ```bash
 # Add tap
-brew tap telemetryflow/telemetryflow-mcp
+brew tap telemetryflow/telemetryflow-go-mcp
 
 # Install
 brew install tfo-mcp
@@ -250,8 +250,8 @@ flowchart TB
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/telemetryflow/telemetryflow-mcp.git
-cd telemetryflow/telemetryflow-mcp
+git clone https://github.com/telemetryflow/telemetryflow-go-mcp.git
+cd telemetryflow/telemetryflow-go-mcp
 
 # 2. Download dependencies
 go mod download
@@ -294,10 +294,10 @@ make build-all
 
 ```bash
 # Install latest version
-go install github.com/telemetryflow/telemetryflow-mcp/cmd/mcp@latest
+go install github.com/telemetryflow/telemetryflow-go-mcp/cmd/mcp@latest
 
 # Install specific version
-go install github.com/telemetryflow/telemetryflow-mcp/cmd/mcp@v1.1.2
+go install github.com/telemetryflow/telemetryflow-go-mcp/cmd/mcp@v1.1.2
 
 # Verify
 tfo-mcp version
@@ -427,7 +427,7 @@ flowchart TB
         CONFIG["MCP Config"]
     end
 
-    subgraph MCP["TFO-MCP"]
+    subgraph MCP["TFO-GO-MCP"]
         SERVER["MCP Server"]
         TOOLS["Tools"]
     end
@@ -444,7 +444,7 @@ flowchart TB
 
 1. Open Claude Desktop settings
 2. Navigate to MCP Servers section
-3. Add TFO-MCP configuration:
+3. Add TFO-GO-MCP configuration:
 
 **macOS** (`~/Library/Application Support/Claude/claude_desktop_config.json`):
 
@@ -468,7 +468,7 @@ flowchart TB
 {
   "mcpServers": {
     "tfo-mcp": {
-      "command": "C:\\Program Files\\TFO-MCP\\tfo-mcp.exe",
+      "command": "C:\\Program Files\\TFO-GO-MCP\\tfo-mcp.exe",
       "args": ["run"],
       "env": {
         "TELEMETRYFLOW_MCP_CLAUDE_API_KEY": "your-api-key"
@@ -538,7 +538,7 @@ flowchart TB
 tfo-mcp version
 
 # Expected output:
-# TFO-MCP - TelemetryFlow GO MCP Server
+# TFO-GO-MCP - TelemetryFlow GO MCP Server
 # Version:    1.1.2
 # Go Version: go1.24
 # ...
@@ -609,7 +609,7 @@ flowchart TB
 cp /etc/tfo-mcp/tfo-mcp.yaml /etc/tfo-mcp/tfo-mcp.yaml.bak
 
 # 2. Download new version
-curl -LO https://github.com/telemetryflow/telemetryflow-mcp/releases/latest/download/tfo-mcp_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m).tar.gz
+curl -LO https://github.com/telemetryflow/telemetryflow-go-mcp/releases/latest/download/tfo-mcp_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m).tar.gz
 
 # 3. Extract and install
 tar -xzf tfo-mcp_*.tar.gz
@@ -650,7 +650,7 @@ tfo-mcp version
 
 ```bash
 # Pull latest changes
-cd telemetryflow/telemetryflow-mcp
+cd telemetryflow/telemetryflow-go-mcp
 git fetch origin
 git checkout main
 git pull
@@ -678,7 +678,7 @@ rm -rf ~/.tfo-mcp
 rm -rf /etc/tfo-mcp
 
 # Windows (PowerShell as Administrator)
-Remove-Item "C:\Program Files\TFO-MCP" -Recurse
+Remove-Item "C:\Program Files\TFO-GO-MCP" -Recurse
 ```
 
 ### Uninstall Docker
@@ -702,7 +702,7 @@ docker volume rm tfo-mcp-config
 brew uninstall tfo-mcp
 
 # Remove tap (optional)
-brew untap telemetryflow/telemetryflow-mcp
+brew untap telemetryflow/telemetryflow-go-mcp
 ```
 
 ### Clean Go Install

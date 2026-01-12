@@ -5,8 +5,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/entities"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/entities"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 func TestNewConversation(t *testing.T) {

@@ -11,12 +11,12 @@ import (
 	"github.com/rs/zerolog"
 	"github.com/spf13/cobra"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/application/handlers"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/claude"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/config"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/persistence"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/presentation/server"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/presentation/tools"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/application/handlers"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/claude"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/config"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/persistence"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/presentation/server"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/presentation/tools"
 )
 
 var (

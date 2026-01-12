@@ -328,7 +328,7 @@ build-windows: ## Build for Windows
 .PHONY: docker-build
 docker-build: ## Build Docker image
 	@echo "Building Docker image..."
-	docker build -t telemetryflow-mcp:$(VERSION) -t telemetryflow-mcp:latest .
+	docker build -t telemetryflow-go-mcp:$(VERSION) -t telemetryflow-go-mcp:latest .
 	@echo "Docker image built"
 
 .PHONY: docker-run
@@ -336,13 +336,13 @@ docker-run: ## Run Docker container
 	@echo "Running Docker container..."
 	docker run --rm -it \
 		-e ANTHROPIC_API_KEY \
-		telemetryflow-mcp:latest
+		telemetryflow-go-mcp:latest
 
 .PHONY: docker-push
 docker-push: ## Push Docker image
 	@echo "Pushing Docker image..."
-	docker push telemetryflow-mcp:$(VERSION)
-	docker push telemetryflow-mcp:latest
+	docker push telemetryflow-go-mcp:$(VERSION)
+	docker push telemetryflow-go-mcp:latest
 
 # ==============================================================================
 # CI/CD

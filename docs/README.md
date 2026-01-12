@@ -99,6 +99,6 @@ graph TB
 ## Additional Resources
 
 - **Main README**: [../README.md](../README.md)
-- **GitHub Repository**: [telemetryflow/telemetryflow-mcp](https://github.com/telemetryflow/telemetryflow-mcp)
+- **GitHub Repository**: [telemetryflow/telemetryflow-go-mcp](https://github.com/telemetryflow/telemetryflow-go-mcp)
 - **MCP Specification**: [modelcontextprotocol.io](https://modelcontextprotocol.io)
 - **Anthropic Claude API**: [docs.anthropic.com](https://docs.anthropic.com)

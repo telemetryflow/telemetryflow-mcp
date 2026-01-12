@@ -1,4 +1,4 @@
-# TFO-MCP Observability Standards
+# TFO-GO-MCP Observability Standards
 
 ## OpenTelemetry Integration
 
@@ -54,12 +54,12 @@ const (
 
 // Span creation patterns
 func StartMCPSpan(ctx context.Context, operationName string, attrs ...attribute.KeyValue) (context.Context, trace.Span) {
-    tracer := otel.Tracer("telemetryflow-mcp")
+    tracer := otel.Tracer("telemetryflow-go-mcp")
 
     // Add standard MCP attributes
     standardAttrs := []attribute.KeyValue{
         attribute.String("mcp.protocol.version", MCPProtocolVersion),
-        attribute.String("service.name", "telemetryflow-mcp"),
+        attribute.String("service.name", "telemetryflow-go-mcp"),
     }
 
     allAttrs := append(standardAttrs, attrs...)

@@ -13,9 +13,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/aggregates"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/entities"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/aggregates"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/entities"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // TestMCPServerStartup tests the server startup sequence

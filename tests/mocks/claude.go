@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/mock"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/entities"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/services"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/entities"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/services"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // MockClaudeService is a mock implementation of the Claude service

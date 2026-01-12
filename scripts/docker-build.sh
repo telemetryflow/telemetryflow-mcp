@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# TFO-MCP Docker Build Script
+# TFO-GO-MCP Docker Build Script
 # Version: 1.1.2
 # Description: Build and manage Docker images for TelemetryFlow GO MCP Server
 # ==============================================================================
@@ -17,7 +17,7 @@ CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
 # Configuration
-IMAGE_NAME="${IMAGE_NAME:-telemetryflow-mcp}"
+IMAGE_NAME="${IMAGE_NAME:-telemetryflow-go-mcp}"
 VERSION="${VERSION:-1.1.2}"
 REGISTRY="${REGISTRY:-}"
 PLATFORMS="${PLATFORMS:-linux/amd64,linux/arm64}"
@@ -233,7 +233,7 @@ clean() {
 }
 
 show_help() {
-    echo "TFO-MCP Docker Build Script"
+    echo "TFO-GO-MCP Docker Build Script"
     echo ""
     echo "Usage: $0 [command] [options]"
     echo ""

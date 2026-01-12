@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# TFO-MCP Test Script
+# TFO-GO-MCP Test Script
 # Version: 1.1.2
 # Description: Run tests for TelemetryFlow GO MCP Server
 # ==============================================================================
@@ -187,7 +187,7 @@ clean() {
 }
 
 show_help() {
-    echo "TFO-MCP Test Script"
+    echo "TFO-GO-MCP Test Script"
     echo ""
     echo "Usage: $0 [command] [options]"
     echo ""

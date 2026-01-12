@@ -265,7 +265,7 @@ func (q *NATSQueue) createDefaultStreams(ctx context.Context) error {
 	for _, s := range streams {
 		cfg := jetstream.StreamConfig{
 			Name:        s.name,
-			Description: fmt.Sprintf("TFO-MCP %s stream", s.name),
+			Description: fmt.Sprintf("TFO-GO-MCP %s stream", s.name),
 			Subjects:    s.subjects,
 			Retention:   jetstream.LimitsPolicy,
 			MaxAge:      q.config.StreamMaxAge,

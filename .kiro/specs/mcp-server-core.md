@@ -637,7 +637,7 @@ DATABASE_MAX_CONNECTIONS: "10"
 DATABASE_TIMEOUT: "5s"
 
 # Observability Configuration
-TELEMETRYFLOW_MCP_SERVICE_NAME: "telemetryflow-mcp"
+TELEMETRYFLOW_MCP_SERVICE_NAME: "telemetryflow-go-mcp"
 TELEMETRYFLOW_MCP_OTEL_SERVICE_VERSION: "1.0.0"
 TELEMETRYFLOW_MCP_OTLP_ENDPOINT: "http://localhost:4317"
 LOG_LEVEL: "info"
@@ -711,16 +711,16 @@ CMD ["./tfo-mcp", "server", "--config", "configs/production.yaml"]
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: telemetryflow-mcp
+  name: telemetryflow-go-mcp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: telemetryflow-mcp
+      app: telemetryflow-go-mcp
   template:
     metadata:
       labels:
-        app: telemetryflow-mcp
+        app: telemetryflow-go-mcp
     spec:
       containers:
         - name: mcp-server

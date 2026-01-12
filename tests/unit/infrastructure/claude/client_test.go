@@ -13,11 +13,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/entities"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/services"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/claude"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/config"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/entities"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/services"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/claude"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/config"
 )
 
 func TestNewClient(t *testing.T) {

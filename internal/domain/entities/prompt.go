@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"time"
 
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // Prompt represents an MCP prompt entity

@@ -4,7 +4,7 @@ package entities
 import (
 	"time"
 
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // Message represents a message entity in a conversation

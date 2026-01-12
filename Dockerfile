@@ -50,7 +50,7 @@ LABEL org.opencontainers.image.title="TelemetryFlow GO MCP Server" \
     org.opencontainers.image.authors="DevOpsCorner Indonesia <support@devopscorner.id>" \
     org.opencontainers.image.url="https://telemetryflow.id" \
     org.opencontainers.image.documentation="https://docs.telemetryflow.id" \
-    org.opencontainers.image.source="https://github.com/telemetryflow/telemetryflow-mcp" \
+    org.opencontainers.image.source="https://github.com/telemetryflow/telemetryflow-go-mcp" \
     org.opencontainers.image.licenses="Apache-2.0" \
     org.opencontainers.image.base.name="alpine:3.21" \
     # TelemetryFlow specific labels
@@ -90,7 +90,7 @@ ENV ANTHROPIC_API_KEY=""
 # TelemetryFlow Observability (TelemetryFlow SDK)
 ENV TELEMETRYFLOW_API_KEY=""
 ENV TELEMETRYFLOW_ENDPOINT="https://api.telemetryflow.io"
-ENV TELEMETRYFLOW_SERVICE_NAME="telemetryflow-mcp"
+ENV TELEMETRYFLOW_SERVICE_NAME="telemetryflow-go-mcp"
 ENV TELEMETRYFLOW_SERVICE_VERSION="1.1.2"
 ENV TELEMETRYFLOW_ENVIRONMENT="production"
 
@@ -122,7 +122,7 @@ ENV TELEMETRYFLOW_MCP_CLICKHOUSE_URL=""
 # OpenTelemetry (Fallback)
 ENV TELEMETRYFLOW_MCP_TELEMETRY_ENABLED="true"
 ENV TELEMETRYFLOW_MCP_OTLP_ENDPOINT="localhost:4317"
-ENV TELEMETRYFLOW_MCP_SERVICE_NAME="telemetryflow-mcp"
+ENV TELEMETRYFLOW_MCP_SERVICE_NAME="telemetryflow-go-mcp"
 
 # Health check (for SSE/WebSocket modes)
 # HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \

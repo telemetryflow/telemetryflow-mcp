@@ -1,4 +1,4 @@
-# TFO-MCP Claude Integration Standards
+# TFO-GO-MCP Claude Integration Standards
 
 ## Claude API Integration
 

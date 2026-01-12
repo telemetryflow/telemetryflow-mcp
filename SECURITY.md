@@ -5,7 +5,7 @@
     <img src="https://github.com/telemetryflow/.github/raw/main/docs/assets/tfo-logo-mcp-light.svg" alt="TelemetryFlow Logo" width="80%">
   </picture>
 
-  <h3>TelemetryFlow GO MCP Server (TFO-MCP)</h3>
+  <h3>TelemetryFlow GO MCP Server (TFO-GO-MCP)</h3>
 
 [![Version](https://img.shields.io/badge/Version-1.1.2-orange.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -58,7 +58,7 @@ We recommend always using the latest version for the best security.
 Instead, please report them via one of the following methods:
 
 1. **Email**: security@devopscorner.id
-2. **GitHub Security Advisories**: [Create a security advisory](https://github.com/telemetryflow/telemetryflow-mcp/security/advisories/new)
+2. **GitHub Security Advisories**: [Create a security advisory](https://github.com/telemetryflow/telemetryflow-go-mcp/security/advisories/new)
 
 ### What to Include
 
@@ -152,7 +152,7 @@ flowchart TB
 export TELEMETRYFLOW_MCP_CLAUDE_API_KEY="your-api-key"
 
 # DO: Use secret managers in production
-TELEMETRYFLOW_MCP_CLAUDE_API_KEY=$(aws secretsmanager get-secret-value --secret-id telemetryflow-mcp/api-key)
+TELEMETRYFLOW_MCP_CLAUDE_API_KEY=$(aws secretsmanager get-secret-value --secret-id telemetryflow-go-mcp/api-key)
 
 # DON'T: Put keys in config files
 # DON'T: Commit keys to version control
@@ -254,7 +254,7 @@ govulncheck ./...
 go list -json -m all | nancy sleuth
 
 # Docker image scanning
-trivy image telemetryflow-mcp:latest
+trivy image telemetryflow-go-mcp:latest
 ```
 
 ### Dependency Update Policy
@@ -359,7 +359,7 @@ security:
 For security concerns, please contact:
 
 - **Security Email**: security@devopscorner.id
-- **GitHub Security**: [Security Advisories](https://github.com/telemetryflow/telemetryflow-mcp/security/advisories)
+- **GitHub Security**: [Security Advisories](https://github.com/telemetryflow/telemetryflow-go-mcp/security/advisories)
 
 ---
 

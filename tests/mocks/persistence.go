@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/mock"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/aggregates"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/aggregates"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // MockConversationRepository is a mock implementation of the conversation repository

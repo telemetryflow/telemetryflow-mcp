@@ -29,7 +29,7 @@
 
 ## Overview
 
-TelemetryFlow GO MCP Server (TFO-MCP) is an enterprise-grade Model Context Protocol server implementation that provides seamless integration between MCP clients and Anthropic's Claude AI. Built with Go and following Domain-Driven Design (DDD) patterns, it offers a robust, maintainable, and extensible architecture.
+TelemetryFlow GO MCP Server (TFO-GO-MCP) is an enterprise-grade Model Context Protocol server implementation that provides seamless integration between MCP clients and Anthropic's Claude AI. Built with Go and following Domain-Driven Design (DDD) patterns, it offers a robust, maintainable, and extensible architecture.
 
 ### Key Architectural Principles
 
@@ -52,7 +52,7 @@ graph TB
         CUSTOM[Custom MCP Clients]
     end
 
-    subgraph "TFO-MCP Server"
+    subgraph "TFO-GO-MCP Server"
         subgraph "Transport Layer"
             STDIO[STDIO Transport]
             SSE[SSE Transport<br/>Planned]
@@ -1047,7 +1047,7 @@ TelemetryFlow GO MCP uses a polyglot persistence strategy with specialized datab
 ```mermaid
 graph TB
     subgraph "Application Layer"
-        MCP[TFO-MCP Server]
+        MCP[TFO-GO-MCP Server]
         GORM[GORM ORM]
     end
 
@@ -1382,7 +1382,7 @@ sequenceDiagram
 ```mermaid
 graph TB
     subgraph "Application"
-        APP[TFO-MCP]
+        APP[TFO-GO-MCP]
         TRACER[Tracer]
         METER[Meter]
         LOGGER[Logger]
@@ -1541,7 +1541,7 @@ graph TB
 ### Directory Structure
 
 ```
-telemetryflow-mcp/
+telemetryflow-go-mcp/
 ├── cmd/
 │   └── mcp/
 │       └── main.go                 # Application entry point
@@ -1624,7 +1624,7 @@ telemetryflow-mcp/
 
 | Component | Version | Compatibility |
 |-----------|---------|---------------|
-| TFO-MCP | v1.1.2 | MCP 2024-11-05 |
+| TFO-GO-MCP | v1.1.2 | MCP 2024-11-05 |
 | Go | 1.24+ | Required |
 | anthropic-sdk-go | v0.2.0-beta.3 | Claude API |
 | OTEL SDK | v1.39.0 | TFO ecosystem aligned |

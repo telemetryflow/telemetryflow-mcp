@@ -1,4 +1,4 @@
-# TFO-MCP Entity Relationship Diagrams
+# TFO-GO-MCP Entity Relationship Diagrams
 
 > Entity Relationship Diagrams for TelemetryFlow GO MCP Server
 
@@ -17,7 +17,7 @@
 
 ## Overview
 
-This document provides Entity Relationship Diagrams that describe the data structures and relationships within the TFO-MCP Server.
+This document provides Entity Relationship Diagrams that describe the data structures and relationships within the TFO-GO-MCP Server.
 
 ```mermaid
 flowchart LR

@@ -1,4 +1,4 @@
-# TFO-MCP Protocol Standards
+# TFO-GO-MCP Protocol Standards
 
 ## MCP Protocol Implementation
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# TFO-MCP Release Script
+# TFO-GO-MCP Release Script
 # Version: 1.1.2
 # Description: Create releases for TelemetryFlow GO MCP Server
 # ==============================================================================
@@ -21,7 +21,7 @@ BINARY_NAME="tfo-mcp"
 VERSION="${VERSION:-}"
 DIST_DIR="${DIST_DIR:-dist}"
 RELEASE_DIR="${DIST_DIR}/release"
-GITHUB_REPO="telemetryflow/telemetryflow-mcp"
+GITHUB_REPO="telemetryflow/telemetryflow-go-mcp"
 DRY_RUN="${DRY_RUN:-false}"
 
 # ==============================================================================
@@ -248,11 +248,11 @@ build_docker() {
 
     docker build \
         --build-arg VERSION="${VERSION}" \
-        -t "telemetryflow-mcp:${VERSION}" \
-        -t "telemetryflow-mcp:latest" \
+        -t "telemetryflow-go-mcp:${VERSION}" \
+        -t "telemetryflow-go-mcp:latest" \
         .
 
-    log_success "Docker image built: telemetryflow-mcp:${VERSION}"
+    log_success "Docker image built: telemetryflow-go-mcp:${VERSION}"
 }
 
 push_docker() {
@@ -268,8 +268,8 @@ push_docker() {
         return
     fi
 
-    docker push "telemetryflow-mcp:${VERSION}"
-    docker push "telemetryflow-mcp:latest"
+    docker push "telemetryflow-go-mcp:${VERSION}"
+    docker push "telemetryflow-go-mcp:latest"
 
     log_success "Docker image pushed"
 }
@@ -283,7 +283,7 @@ clean() {
 }
 
 show_help() {
-    echo "TFO-MCP Release Script"
+    echo "TFO-GO-MCP Release Script"
     echo ""
     echo "Usage: VERSION=x.y.z $0 [command] [options]"
     echo ""

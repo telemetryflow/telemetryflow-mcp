@@ -67,7 +67,7 @@ type TFOAdapterConfig struct {
 func DefaultTFOAdapterConfig() *TFOAdapterConfig {
 	return &TFOAdapterConfig{
 		Endpoint:         "api.telemetryflow.id:4317",
-		ServiceName:      "telemetryflow-mcp",
+		ServiceName:      "telemetryflow-go-mcp",
 		ServiceVersion:   "0.1.0",
 		ServiceNamespace: "telemetryflow",
 		Environment:      "production",

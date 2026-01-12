@@ -1,4 +1,4 @@
-# TFO-MCP Development Guide
+# TFO-GO-MCP Development Guide
 
 > Complete development guide for TelemetryFlow GO MCP Server
 
@@ -20,7 +20,7 @@
 
 ## Overview
 
-This guide provides comprehensive information for developers working on TFO-MCP.
+This guide provides comprehensive information for developers working on TFO-GO-MCP.
 
 ### Development Architecture
 
@@ -137,8 +137,8 @@ flowchart TB
 
 ```bash
 # Clone repository
-git clone https://github.com/telemetryflow/telemetryflow-mcp.git
-cd telemetryflow/telemetryflow-mcp
+git clone https://github.com/telemetryflow/telemetryflow-go-mcp.git
+cd telemetryflow/telemetryflow-go-mcp
 
 # Install dependencies
 go mod download
@@ -158,7 +158,7 @@ make check
 
 ```mermaid
 flowchart TB
-    subgraph Root["telemetryflow-mcp/"]
+    subgraph Root["telemetryflow-go-mcp/"]
         CMD["cmd/"]
         INTERNAL["internal/"]
         PKG["pkg/"]
@@ -368,7 +368,7 @@ import (
     "github.com/google/uuid"
 
     // Internal packages
-    "github.com/telemetryflow/telemetryflow-mcp/internal/domain"
+    "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain"
 )
 
 // Constants
@@ -672,7 +672,7 @@ flowchart TB
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug TFO-MCP",
+      "name": "Debug TFO-GO-MCP",
       "type": "go",
       "request": "launch",
       "mode": "debug",

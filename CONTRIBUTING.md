@@ -5,7 +5,7 @@
     <img src="https://github.com/telemetryflow/.github/raw/main/docs/assets/tfo-logo-mcp-light.svg" alt="TelemetryFlow Logo" width="80%">
   </picture>
 
-  <h3>TelemetryFlow GO MCP Server (TFO-MCP)</h3>
+  <h3>TelemetryFlow GO MCP Server (TFO-GO-MCP)</h3>
 
 [![Version](https://img.shields.io/badge/Version-1.1.2-orange.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -67,7 +67,7 @@ This project adheres to the [Contributor Covenant Code of Conduct](https://www.c
 ```bash
 # Fork and clone the repository
 git clone https://github.com/YOUR_USERNAME/telemetryflow.git
-cd telemetryflow/telemetryflow-mcp
+cd telemetryflow/telemetryflow-go-mcp
 
 # Run development setup
 ./scripts/setup-dev.sh
@@ -181,7 +181,7 @@ What actually happens.
 
 ## Environment
 
-- TFO-MCP Version:
+- TFO-GO-MCP Version:
 - OS:
 - Go Version:
 
@@ -247,7 +247,7 @@ flowchart LR
    ```bash
    # Fork on GitHub, then clone your fork
    git clone https://github.com/YOUR_USERNAME/telemetryflow.git
-   cd telemetryflow/telemetryflow-mcp
+   cd telemetryflow/telemetryflow-go-mcp
    ```
 
 2. **Create a feature branch**
@@ -399,7 +399,7 @@ import (
 
     "github.com/google/uuid"
 
-    "github.com/telemetryflow/telemetryflow-mcp/internal/domain"
+    "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain"
 )
 
 // Constants
@@ -572,8 +572,8 @@ When making changes:
 ### Getting Help
 
 - **Documentation**: [docs/README.md](docs/README.md)
-- **Issues**: [GitHub Issues](https://github.com/telemetryflow/telemetryflow-mcp/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/telemetryflow/telemetryflow-mcp/discussions)
+- **Issues**: [GitHub Issues](https://github.com/telemetryflow/telemetryflow-go-mcp/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/telemetryflow/telemetryflow-go-mcp/discussions)
 
 ### Recognition
 

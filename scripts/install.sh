@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# TFO-MCP Installation Script
+# TFO-GO-MCP Installation Script
 # Version: 1.1.2
 # Description: Install TelemetryFlow GO MCP Server
 # ==============================================================================
@@ -21,7 +21,7 @@ BINARY_NAME="tfo-mcp"
 VERSION="${VERSION:-1.1.2}"
 INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
 CONFIG_DIR="${CONFIG_DIR:-$HOME/.tfo-mcp}"
-GITHUB_REPO="telemetryflow/telemetryflow-mcp"
+GITHUB_REPO="telemetryflow/telemetryflow-go-mcp"
 DOWNLOAD_URL="https://github.com/${GITHUB_REPO}/releases/download"
 
 # ==============================================================================
@@ -148,7 +148,7 @@ create_config() {
     # Create default config if it doesn't exist
     if [[ ! -f "${CONFIG_DIR}/tfo-mcp.yaml" ]]; then
         cat > "${CONFIG_DIR}/tfo-mcp.yaml" << 'EOF'
-# TFO-MCP Configuration File
+# TFO-GO-MCP Configuration File
 # See documentation for full configuration options
 
 server:
@@ -254,7 +254,7 @@ uninstall() {
 }
 
 show_help() {
-    echo "TFO-MCP Installation Script"
+    echo "TFO-GO-MCP Installation Script"
     echo ""
     echo "Usage: $0 [command] [options]"
     echo ""
@@ -298,7 +298,7 @@ print_post_install() {
     echo "     tfo-mcp validate"
     echo ""
     echo "For more information, see the documentation:"
-    echo "  https://github.com/${GITHUB_REPO}/tree/main/telemetryflow-mcp/docs"
+    echo "  https://github.com/${GITHUB_REPO}/tree/main/telemetryflow-go-mcp/docs"
     echo ""
 }
 

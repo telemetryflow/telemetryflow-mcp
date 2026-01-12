@@ -1,4 +1,4 @@
-# TFO-MCP Commands Reference
+# TFO-GO-MCP Commands Reference
 
 > Complete CLI and MCP protocol commands reference for TelemetryFlow GO MCP Server
 
@@ -19,7 +19,7 @@
 
 ## Overview
 
-TFO-MCP provides two interfaces for interaction:
+TFO-GO-MCP provides two interfaces for interaction:
 1. **CLI Commands** - Command-line interface for server management
 2. **MCP Protocol Methods** - JSON-RPC methods for client communication
 
@@ -42,7 +42,7 @@ flowchart TB
         LOGGING["logging/*"]
     end
 
-    subgraph Server["TFO-MCP Server"]
+    subgraph Server["TFO-GO-MCP Server"]
         HANDLER["Command Handler"]
     end
 
@@ -138,7 +138,7 @@ tfo-mcp version
 **Output:**
 
 ```
-TFO-MCP - TelemetryFlow GO MCP Server
+TFO-GO-MCP - TelemetryFlow GO MCP Server
 Version:    1.1.2
 Go Version: go1.24
 Build Date: 2024-01-15
@@ -196,7 +196,7 @@ flowchart TB
         REQ["JSON-RPC Request"]
     end
 
-    subgraph Server["TFO-MCP Server"]
+    subgraph Server["TFO-GO-MCP Server"]
         ROUTER["Method Router"]
 
         subgraph Handlers["Method Handlers"]
@@ -866,7 +866,7 @@ Echo back the input (useful for testing).
 {
   "name": "echo",
   "arguments": {
-    "message": "Hello, TFO-MCP!"
+    "message": "Hello, TFO-GO-MCP!"
   }
 }
 ```

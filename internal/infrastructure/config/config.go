@@ -177,7 +177,7 @@ func DefaultConfig() *Config {
 		},
 		Telemetry: TelemetryConfig{
 			Enabled:         true,
-			ServiceName:     "telemetryflow-mcp",
+			ServiceName:     "telemetryflow-go-mcp",
 			Environment:     "development",
 			OTLPEndpoint:    "localhost:4317",
 			OTLPInsecure:    true,
@@ -210,8 +210,8 @@ func Load(configPath string) (*Config, error) {
 		v.SetConfigName("config")
 		v.AddConfigPath(".")
 		v.AddConfigPath("./configs")
-		v.AddConfigPath("/etc/telemetryflow-mcp")
-		v.AddConfigPath("$HOME/.telemetryflow-mcp")
+		v.AddConfigPath("/etc/telemetryflow-go-mcp")
+		v.AddConfigPath("$HOME/.telemetryflow-go-mcp")
 	}
 
 	// Environment variable settings

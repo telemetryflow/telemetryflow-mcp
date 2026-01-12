@@ -813,7 +813,7 @@ tfo-mcp run
 **Q: How do I update to the latest version?**
 ```bash
 # Binary
-curl -LO https://github.com/telemetryflow/telemetryflow-mcp/releases/latest/download/tfo-mcp_$(uname -s)_$(uname -m).tar.gz
+curl -LO https://github.com/telemetryflow/telemetryflow-go-mcp/releases/latest/download/tfo-mcp_$(uname -s)_$(uname -m).tar.gz
 tar -xzf tfo-mcp_*.tar.gz
 sudo mv tfo-mcp /usr/local/bin/
 
@@ -922,7 +922,7 @@ What actually happens.
 uname -a
 go version
 
-# TFO-MCP information
+# TFO-GO-MCP information
 tfo-mcp version
 
 # Configuration (sanitize secrets!)

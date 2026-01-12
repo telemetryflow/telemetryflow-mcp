@@ -1,4 +1,4 @@
-module github.com/telemetryflow/telemetryflow-mcp
+module github.com/telemetryflow/telemetryflow-go-mcp
 
 go 1.24.0
 

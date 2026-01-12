@@ -1,4 +1,4 @@
-# TFO-MCP Configuration Guide
+# TFO-GO-MCP Configuration Guide
 
 > Complete configuration reference for TelemetryFlow GO MCP Server
 
@@ -24,7 +24,7 @@
 
 ## Overview
 
-TFO-MCP uses a hierarchical configuration system that supports multiple sources with precedence rules.
+TFO-GO-MCP uses a hierarchical configuration system that supports multiple sources with precedence rules.
 
 ### Configuration Hierarchy
 
@@ -89,7 +89,7 @@ sequenceDiagram
 
 ```mermaid
 flowchart TB
-    subgraph Config["TFO-MCP Configuration"]
+    subgraph Config["TFO-GO-MCP Configuration"]
         SERVER["Server Config"]
         CLAUDE["Claude Config"]
         MCP["MCP Config"]
@@ -223,7 +223,7 @@ flowchart LR
 
 ```yaml
 # ==============================================================================
-# TFO-MCP Configuration File
+# TFO-GO-MCP Configuration File
 # ==============================================================================
 
 # Server Configuration

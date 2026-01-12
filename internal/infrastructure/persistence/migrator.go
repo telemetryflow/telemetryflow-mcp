@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/rs/zerolog/log"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/persistence/models"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/persistence/models"
 	"gorm.io/gorm"
 )
 

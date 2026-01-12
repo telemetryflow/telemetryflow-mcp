@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/entities"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/services"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/entities"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/services"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // ToolRegistry manages built-in tools

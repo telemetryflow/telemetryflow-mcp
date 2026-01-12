@@ -12,10 +12,10 @@ import (
 	"github.com/anthropics/anthropic-sdk-go/option"
 	"github.com/rs/zerolog"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/entities"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/services"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/config"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/entities"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/services"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/config"
 )
 
 // Client errors

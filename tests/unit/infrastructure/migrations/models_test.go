@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/persistence/models"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/persistence/models"
 )
 
 func TestJSONBType(t *testing.T) {

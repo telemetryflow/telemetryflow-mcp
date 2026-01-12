@@ -1,4 +1,4 @@
-# TFO-MCP Technology Stack
+# TFO-GO-MCP Technology Stack
 
 ## Overview
 

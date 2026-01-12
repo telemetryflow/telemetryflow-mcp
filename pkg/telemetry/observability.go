@@ -62,7 +62,7 @@ type ObservabilityConfig struct {
 func DefaultObservabilityConfig() *ObservabilityConfig {
 	return &ObservabilityConfig{
 		Endpoint:         "api.telemetryflow.id:4317",
-		ServiceName:      "telemetryflow-mcp",
+		ServiceName:      "telemetryflow-go-mcp",
 		ServiceVersion:   "1.1.2",
 		ServiceNamespace: "telemetryflow",
 		Environment:      "production",
@@ -130,8 +130,8 @@ func NewObservabilityFromEnv() (*Observability, error) {
 
 	return &Observability{
 		client:         client,
-		tracer:         NewTFOTracer(client, "telemetryflow-mcp", "1.1.2"),
-		serviceName:    "telemetryflow-mcp",
+		tracer:         NewTFOTracer(client, "telemetryflow-go-mcp", "1.1.2"),
+		serviceName:    "telemetryflow-go-mcp",
 		serviceVersion: "1.1.2",
 		environment:    "production",
 	}, nil

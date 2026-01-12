@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // DomainEvent is the interface for all domain events

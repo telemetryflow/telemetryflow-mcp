@@ -4,7 +4,7 @@ package dto
 import (
 	"time"
 
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // SessionDTO represents a session data transfer object

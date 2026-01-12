@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/persistence"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/persistence/models"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/persistence"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/persistence/models"
 )
 
 func TestMigration_Structure(t *testing.T) {

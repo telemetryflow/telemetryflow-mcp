@@ -13,12 +13,12 @@ import (
 
 	"github.com/rs/zerolog"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/application/commands"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/application/handlers"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/application/queries"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/aggregates"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/infrastructure/config"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/application/commands"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/application/handlers"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/application/queries"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/aggregates"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/infrastructure/config"
 )
 
 // Server errors

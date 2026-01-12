@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# TFO-MCP Validation Script
+# TFO-GO-MCP Validation Script
 # Version: 1.1.2
 # Description: Validate TelemetryFlow GO MCP Server configuration and environment
 # ==============================================================================
@@ -316,7 +316,7 @@ print_summary() {
 }
 
 show_help() {
-    echo "TFO-MCP Validation Script"
+    echo "TFO-GO-MCP Validation Script"
     echo ""
     echo "Usage: $0 [command]"
     echo ""

@@ -1,8 +1,8 @@
-# TFO-MCP Development Patterns
+# TFO-GO-MCP Development Patterns
 
 ## LEGO Builder Methodology
 
-The TFO-MCP follows the LEGO Builder methodology for modular, composable architecture.
+The TFO-GO-MCP follows the LEGO Builder methodology for modular, composable architecture.
 
 ### Module Structure
 

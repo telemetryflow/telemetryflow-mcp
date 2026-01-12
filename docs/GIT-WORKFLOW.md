@@ -1,4 +1,4 @@
-# TFO-MCP Git Workflow
+# TFO-GO-MCP Git Workflow
 
 > Git workflow and branching strategy for TelemetryFlow GO MCP Server
 
@@ -20,7 +20,7 @@
 
 ## Overview
 
-TFO-MCP follows a Git Flow-inspired branching strategy optimized for continuous delivery.
+TFO-GO-MCP follows a Git Flow-inspired branching strategy optimized for continuous delivery.
 
 ### Workflow Philosophy
 

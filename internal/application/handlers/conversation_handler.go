@@ -5,13 +5,13 @@ import (
 	"context"
 	"errors"
 
-	"github.com/telemetryflow/telemetryflow-mcp/internal/application/commands"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/application/queries"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/aggregates"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/entities"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/repositories"
-	"github.com/telemetryflow/telemetryflow-mcp/internal/domain/services"
-	vo "github.com/telemetryflow/telemetryflow-mcp/internal/domain/valueobjects"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/application/commands"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/application/queries"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/aggregates"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/entities"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/repositories"
+	"github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/services"
+	vo "github.com/telemetryflow/telemetryflow-go-mcp/internal/domain/valueobjects"
 )
 
 // Conversation handler errors

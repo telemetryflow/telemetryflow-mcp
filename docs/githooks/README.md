@@ -1,4 +1,4 @@
-# TFO-MCP Git Hooks
+# TFO-GO-MCP Git Hooks
 
 > Git hooks documentation for TelemetryFlow GO MCP Server
 
@@ -17,7 +17,7 @@
 
 ## Overview
 
-Git hooks are scripts that run automatically when certain Git events occur. TFO-MCP provides pre-configured hooks to ensure code quality and consistency.
+Git hooks are scripts that run automatically when certain Git events occur. TFO-GO-MCP provides pre-configured hooks to ensure code quality and consistency.
 
 ### Hook Architecture
 

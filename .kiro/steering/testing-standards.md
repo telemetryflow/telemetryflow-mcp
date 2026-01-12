@@ -1,4 +1,4 @@
-# TFO-MCP Testing Standards
+# TFO-GO-MCP Testing Standards
 
 ## Testing Philosophy
 

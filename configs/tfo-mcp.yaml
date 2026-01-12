@@ -63,7 +63,7 @@ logging:
 # Telemetry (OpenTelemetry) configuration
 telemetry:
   enabled: true
-  service_name: "telemetryflow-mcp"
+  service_name: "telemetryflow-go-mcp"
   environment: "development"
   otlp_endpoint: "localhost:4317"
   otlp_insecure: true

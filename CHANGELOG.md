@@ -5,7 +5,7 @@
     <img src="https://github.com/telemetryflow/.github/raw/main/docs/assets/tfo-logo-mcp-light.svg" alt="TelemetryFlow Logo" width="80%">
   </picture>
 
-  <h3>TelemetryFlow GO MCP Server (TFO-MCP)</h3>
+  <h3>TelemetryFlow GO MCP Server (TFO-GO-MCP)</h3>
 
 [![Version](https://img.shields.io/badge/Version-1.1.2-orange.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -23,7 +23,7 @@
 
 # Changelog
 
-All notable changes to TelemetryFlow GO MCP Server (TFO-MCP) will be documented in this file.
+All notable changes to TelemetryFlow GO MCP Server (TFO-GO-MCP) will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -178,7 +178,7 @@ No breaking changes. Update your binary and restart the server.
 
 ```bash
 # Download new version
-curl -LO https://github.com/telemetryflow/telemetryflow-mcp/releases/download/v1.1.2/tfo-mcp_$(uname -s)_$(uname -m).tar.gz
+curl -LO https://github.com/telemetryflow/telemetryflow-go-mcp/releases/download/v1.1.2/tfo-mcp_$(uname -s)_$(uname -m).tar.gz
 
 # Extract and install
 tar -xzf tfo-mcp_*.tar.gz
@@ -192,11 +192,11 @@ tfo-mcp version
 
 ## Links
 
-- [GitHub Repository](https://github.com/telemetryflow/telemetryflow-mcp)
+- [GitHub Repository](https://github.com/telemetryflow/telemetryflow-go-mcp)
 - [Documentation](docs/README.md)
-- [Issue Tracker](https://github.com/telemetryflow/telemetryflow-mcp/issues)
+- [Issue Tracker](https://github.com/telemetryflow/telemetryflow-go-mcp/issues)
 
-[Unreleased]: https://github.com/telemetryflow/telemetryflow-mcp/compare/v1.1.2...HEAD
-[1.1.2]: https://github.com/telemetryflow/telemetryflow-mcp/compare/v1.1.1...v1.1.2
-[1.1.1]: https://github.com/telemetryflow/telemetryflow-mcp/compare/v1.1.0...v1.1.1
-[1.1.0]: https://github.com/telemetryflow/telemetryflow-mcp/releases/tag/v1.1.0
+[Unreleased]: https://github.com/telemetryflow/telemetryflow-go-mcp/compare/v1.1.2...HEAD
+[1.1.2]: https://github.com/telemetryflow/telemetryflow-go-mcp/compare/v1.1.1...v1.1.2
+[1.1.1]: https://github.com/telemetryflow/telemetryflow-go-mcp/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/telemetryflow/telemetryflow-go-mcp/releases/tag/v1.1.0

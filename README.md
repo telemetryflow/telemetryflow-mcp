@@ -5,7 +5,7 @@
     <img src="https://github.com/telemetryflow/.github/raw/main/docs/assets/tfo-logo-mcp-light.svg" alt="TelemetryFlow Logo" width="80%">
   </picture>
 
-  <h3>TelemetryFlow GO MCP Server (TFO-MCP)</h3>
+  <h3>TelemetryFlow GO MCP Server (TFO-GO-MCP)</h3>
 
 [![Version](https://img.shields.io/badge/Version-1.1.2-orange.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -120,7 +120,7 @@ graph TB
         CUSTOM[Custom MCP Clients]
     end
 
-    subgraph "TFO-MCP Server"
+    subgraph "TFO-GO-MCP Server"
         subgraph "Presentation Layer"
             SERVER[MCP Server<br/>JSON-RPC 2.0]
             TOOLS[Built-in Tools]
@@ -195,7 +195,7 @@ graph TB
 ```mermaid
 sequenceDiagram
     participant Client as MCP Client
-    participant Server as TFO-MCP Server
+    participant Server as TFO-GO-MCP Server
     participant Handler as Request Handler
     participant Domain as Domain Layer
     participant Claude as Claude API
@@ -563,8 +563,8 @@ graph TD
 
 ```bash
 # Clone the repository
-git clone https://github.com/telemetryflow/telemetryflow-mcp.git
-cd telemetryflow/telemetryflow-mcp
+git clone https://github.com/telemetryflow/telemetryflow-go-mcp.git
+cd telemetryflow/telemetryflow-go-mcp
 
 # Download dependencies
 make deps
@@ -579,19 +579,19 @@ make install
 ### Using Go Install
 
 ```bash
-go install github.com/telemetryflow/telemetryflow-mcp/cmd/mcp@latest
+go install github.com/telemetryflow/telemetryflow-go-mcp/cmd/mcp@latest
 ```
 
 ### Docker
 
 ```bash
 # Build image
-docker build -t telemetryflow-mcp:1.1.2 .
+docker build -t telemetryflow-go-mcp:1.1.2 .
 
 # Run container
 docker run --rm -it \
   -e ANTHROPIC_API_KEY="your-api-key" \
-  telemetryflow-mcp:1.1.2
+  telemetryflow-go-mcp:1.1.2
 ```
 
 ---
@@ -637,7 +637,7 @@ logging:
 
 telemetry:
   enabled: true
-  service_name: "telemetryflow-mcp"
+  service_name: "telemetryflow-go-mcp"
   otlp_endpoint: "localhost:4317"
   trace_sample_rate: 1.0
 ```
@@ -748,7 +748,7 @@ Add to your Claude Code MCP settings (`~/.config/claude-code/mcp_settings.json`)
 ## Project Structure
 
 ```
-telemetryflow-mcp/
+telemetryflow-go-mcp/
 ├── cmd/
 │   └── mcp/
 │       └── main.go                     # Application entry point
@@ -933,7 +933,7 @@ make ci-test
 
 ```mermaid
 graph LR
-    subgraph "TFO-MCP"
+    subgraph "TFO-GO-MCP"
         APP[Application]
         TRACER[Tracer Provider]
         METER[Meter Provider]
@@ -964,7 +964,7 @@ graph LR
 ```yaml
 telemetry:
   enabled: true
-  service_name: "telemetryflow-mcp"
+  service_name: "telemetryflow-go-mcp"
   environment: "production"
   otlp_endpoint: "localhost:4317"
   otlp_insecure: false
@@ -1083,8 +1083,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support
 
 - **Documentation**: [TelemetryFlow Docs](https://docs.telemetryflow.id)
-- **Issues**: [GitHub Issues](https://github.com/telemetryflow/telemetryflow-mcp/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/telemetryflow/telemetryflow-mcp/discussions)
+- **Issues**: [GitHub Issues](https://github.com/telemetryflow/telemetryflow-go-mcp/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/telemetryflow/telemetryflow-go-mcp/discussions)
 
 ---
 
