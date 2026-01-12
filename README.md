@@ -28,7 +28,7 @@ This server works as the **AI integration layer** for the TelemetryFlow Platform
 - Claude AI conversation capabilities via MCP
 - Tool execution with built-in and custom tools
 - Resource management and prompt templates
-- OpenTelemetry observability integration
+- TelemetryFlow SDK observability integration
 
 ---
 
@@ -49,7 +49,8 @@ graph LR
             COLLECTOR[TFO-Collector<br/>OTEL v0.142.0]
         end
         subgraph "AI Integration"
-            MCP[TFO-MCP<br/>Claude API + MCP]
+            MCP_GO[TFO-Go-MCP<br/>Claude API + MCP]
+            MCP_PY[TFO-Python-MCP<br/>Claude API + MCP]
         end
         subgraph "Platform"
             CORE[TFO-Core<br/>NestJS IAM v1.1.4]
@@ -61,10 +62,13 @@ graph LR
     SDK_OTHER --> AGENT
     AGENT --> COLLECTOR
     COLLECTOR --> CORE
-    MCP --> CORE
-    MCP -.-> |AI Capabilities| COLLECTOR
+    MCP_GO --> CORE
+    MCP_PY --> CORE
+    MCP_GO -.-> |AI Capabilities| COLLECTOR
+    MCP_PY -.-> |AI Capabilities| COLLECTOR
 
-    style MCP fill:#E1BEE7,stroke:#7B1FA2,stroke-width:3px
+    style MCP_GO fill:#3776AB,stroke:#FFD43B,stroke-width:3px
+    style MCP_PY fill:#E1BEE7,stroke:#7B1FA2
     style SDK_GO fill:#C8E6C9,stroke:#388E3C
     style SDK_PY fill:#C8E6C9,stroke:#388E3C
     style SDK_OTHER fill:#DFDFDF,stroke:#0F0F0F
@@ -80,7 +84,8 @@ graph LR
 | TFO-Collector  | v1.1.2     | Collector v0.142.0 | Central Telemetry Processing |
 | TFO-Go-SDK     | v1.1.2     | SDK v1.39.0        | Go Instrumentation           |
 | TFO-Python-SDK | v1.1.2     | SDK v1.28.0        | Python Instrumentation       |
-| **TFO-MCP**    | **v1.1.2** | **SDK v1.39.0**    | **MCP Server + Claude AI**   |
+| **TFO-Go-MCP**    | **v1.1.2** | **SDK v1.39.0**    | **GO MCP Server + Claude AI**   |
+| TFO-Python-MCP | v1.1.2 | SDK v1.28.0 | Python MCP Server + Claude AI |
 
 ---
 
